@@ -1,0 +1,102 @@
+Creature
+1 Agent of Erebos
+1 Alseid of Life's Bounty
+1 Archon of Sun's Grace
+1 Callous Bloodmage
+1 Foundation Breaker
+1 Grim Guardian
+1 Midnight Reaper
+1 Morbid Opportunist
+1 Poison-Tip Archer
+1 Qasali Pridemage
+1 Reassembling Skeleton
+1 Sifter of Skulls
+1 Smothering Abomination
+1 Solemn Simulacrum
+1 Syr Konrad, the Grim
+1 Underworld Coinsmith
+1 Viscera Seer
+1 Woe Strider
+
+Artifact
+1 Arcane Signet
+
+Land
+1 Ash Barrens
+1 Blighted Woodland
+1 Exotic Orchard
+1 High Market
+1 Krosan Verge
+1 Llanowar Wastes
+1 Myriad Landscape
+1 Path of Ancestry
+
+Enchantment
+1 Blight Mound
+1 Dreadhorde Invasion
+1 Fallen Ideal
+1 Fanatical Devotion
+1 Font of Fertility
+1 Kenrith's Transformation
+1 Martyr's Cause
+1 Omen of the Hunt
+1 Promise of Bunrei
+1 Seal of Cleansing
+1 Seal of Doom
+1 Seal of Primordium
+
+Sorcery
+1 Cultivate
+1 Farseek
+1 Ondu Inversion // Ondu Skyruins
+1 Painful Truths
+1 Rampant Growth
+1 Read the Bones
+
+Commander
+1 Myrkul, Lord of Bones
+
+Instant
+1 Plumb the Forbidden
+1 Stinging Study
+
+
+Vila
+1x Path of Ancestry [Vila{noDeck}]
+1x Ash Barrens [Vila{noDeck}]
+1x Blighted Woodland [Vila{noDeck}]
+1x High Market [Vila{noDeck}]
+1x Krosan Verge [Vila{noDeck}]
+1x Myriad Landscape [Vila{noDeck}]
+1x Exotic Orchard [Vila{noDeck}]
+1x Llanowar Wastes [Vila{noDeck}]
+1x Ondu Skyruins [Vila{noDeck}]
+1x Alseid of Life's Bounty [Vila{noDeck}]
+1x Font of Fertility [Vila{noDeck}]
+1x Viscera Seer [Vila{noDeck}]
+1x Farseek [Vila{noDeck}]
+1x Hidden Stockpile [Vila{noDeck}]
+1x Reassembling Skeleton [Vila{noDeck}]
+1x Dreadhorde Invasion [Vila{noDeck}]
+1x Qasali Pridemage [Vila{noDeck}]
+1x Underworld Coinsmith [Vila{noDeck}]
+1x Seal of Cleansing [Vila{noDeck}]
+1x Seal of Primordium [Vila{noDeck}]
+1x Kenrith's Transformation [Vila{noDeck}]
+1x Omen of the Hunt [Vila{noDeck}]
+1x Martyr's Cause [Vila{noDeck}]
+1x Grim Guardian [Vila{noDeck}]
+1x Fallen Ideal [Vila{noDeck}]
+1x Read the Bones [Vila{noDeck}]
+1x Morbid Opportunist [Vila{noDeck}]
+1x Promise of Bunrei [Vila{noDeck}]
+1x Seal of Doom [Vila{noDeck}]
+1x Painful Truths [Vila{noDeck}]
+1x Smothering Abomination [Vila{noDeck}]
+1x Agent of Erebos [Vila{noDeck}]
+1x Archon of Sun's Grace [Vila{noDeck}]
+1x Poison-Tip Archer [Vila{noDeck}]
+1x Foundation Breaker [Vila{noDeck}]
+1x Solemn Simulacrum [Vila{noDeck}]
+1x Stinging Study [Vila{noDeck}]
+1x Ondu Inversion [Vila{noDeck}]

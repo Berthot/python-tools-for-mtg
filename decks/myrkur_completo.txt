@@ -1,0 +1,84 @@
+1 Path of Ancestry
+1 TAINTED FIELD
+1 Ash Barrens
+6 Forest
+1 Blighted Woodland
+1 Grim Backwoods
+1 High Market
+1 Krosan Verge
+9 Swamp
+1 Myriad Landscape
+4 Plains
+1 Exotic Orchard
+1 Sungrass Prairie
+1 Llanowar Wastes
+1 Temple of Malady
+1 Temple of Plenty
+1 Temple of Silence
+1 Evolving Wilds
+1 Command Tower
+1 Canopy Vista
+1 Alseid of Life's Bounty
+1 Font of Fertility
+1 Dockside Chef
+1 Viscera Seer
+1 Sakura-Tribe Elder
+1 Farseek
+1 Cruel Celebrant
+1 Cathar Commando
+1 Rampant Growth
+1 Zulaport Cutthroat
+1 Hidden Stockpile
+1 Reassembling Skeleton
+1 Dreadhorde Invasion
+1 Jadar, Ghoulcaller of Nephalia
+1 Qasali Pridemage
+1 Underworld Coinsmith
+1 Plumb the Forbidden
+1 Seal of Cleansing
+1 Seal of Primordium
+1 Arcane Signet
+1 Kenrith's Transformation
+1 Abzan Charm
+1 Woe Strider
+1 Grim Haruspex
+1 Abzan Ascendancy
+1 Omen of the Hunt
+1 Baba Lysaga, Night Witch
+1 Martyr's Cause
+1 Midnight Reaper
+1 Burnished Hart
+1 Cultivate
+1 Fanatical Devotion
+1 Beast Within
+1 Grim Guardian
+1 Fallen Ideal
+1 Read the Bones
+1 Blight Mound
+1 Morbid Opportunist
+1 Promise of Bunrei
+1 Callous Bloodmage
+1 Seal of Doom
+1 Painful Truths
+1 Smothering Abomination
+1 Agent of Erebos
+1 Arasta of the Endless Web
+1 Archon of Sun's Grace
+1 Poison-Tip Archer
+1 Sengir Autocrat
+1 Field of Souls
+1 Greed
+1 Eidolon of Blossoms
+1 Ajani's Chosen
+1 Sifter of Skulls
+1 Foundation Breaker
+1 Solemn Simulacrum
+1 Vindictive Vampire
+1 Stinging Study
+1 Doomwake Giant
+1 Cleansing Nova
+1 Moldervine Reclamation
+1 Syr Konrad, the Grim
+1 Greater Tanuki
+1 Myrkul, Lord of Bones
+1 Ondu Inversion
