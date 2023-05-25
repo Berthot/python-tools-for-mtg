@@ -1,8 +1,8 @@
-with open('decks/myrkur_completo.txt', 'r') as deck1:
+with open('duplicates/file_a.txt', 'r') as deck1:
     completo = deck1.read().lower().split('\n')
     deck_a = len(completo)
 
-with open('decks/myrkur_comprados.txt', 'r') as deck2:
+with open('duplicates/file_b.txt', 'r') as deck2:
     comprado = deck2.read().lower().split('\n')
     deck_b = len(comprado)
 

@@ -48,7 +48,7 @@ class Deck:
         return i
 
     def buy_cards(self, store: str = 'vila', limit: int = -1):
-        var = input(f'digite sim para procurar na {store}')
+        var = input(f'digite sim para procurar na {store}: ')
         if var != 's':
             return
         acc = 0

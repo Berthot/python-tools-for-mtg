@@ -17,6 +17,10 @@ class Font:
             return f'https://www.summoner.com.br/?view=ecom%2Fitens&id=212593&searchExactMatch=&busca={card_name}&btnEnviar=1'
         if store == 'meruru':
             return f'https://www.meruru.com.br/?view=ecom%2Fitens&id=64102&searchExactMatch=&busca={card_name}&x=0&y=0'
+        if store == 'liga':
+            return f'https://www.ligamagic.com.br/?view=cards%2Fsearch&card={card_name}'
+        if store == 'blood':
+            return f'https://www.lojabloodmoon.com.br/?view=ecom%2Fitens&id=64102&searchExactMatch=&busca={card_name}'
 
 
 class Card:

@@ -1,29 +1,49 @@
-mantle of the ancients
-eye of vecna
-benevolent blessing
-inversao de ondu
-abrigo de sejiri
-mirror shield
-all that glitters
-hour of revelation
-shielded by faith
-sage's reverie
-eidolon of countless battles
-darksteel mutation
-ajani's chosen
-rogue's passage
-ethereal armor
-indestructibility
-spirit mantle
-mask of law and grace
-cho-manno's blessing
-shield of duty and reason
-unquestioned authority
-mask of memory
-guardian idol
-flickerform
-scarab of the unseen
-prismatic lens
-pentarch ward
-mesa enchantress
-armored ascension
+animate dead
+biomancer's familiar
+chart a course
+despark
+faithful mending
+fellwar stone
+fertile ground
+fracture
+persist
+priest of fell rites
+sakura-tribe elder
+vohar, vodalian desecrator
+beast within
+buried alive
+chromatic lantern
+kodama's reach
+life
+mythos of nethroi
+obsessive stitcher
+painful truths
+victimize
+zirda, the dawnwaker
+ancient excavation
+dread return
+greater good
+momentous fall
+mythos of brokkos
+mythos of snapdax
+scattered thoughts
+vile entomber
+wilderness reclamation
+corpse connoisseur
+doom whisperer
+final parting
+karmic guide
+living death
+phyrexian delver
+river kelpie
+tragic arrogance
+command the dreadhorde
+flayer of the hatebound
+olivia's attendants
+colossal skyturtle
+nezahal, primal tide
+scholar of the lost trove
+sepulchral primordial
+thieving amalgam
+archetype of endurance
+vilis, broker of blood
