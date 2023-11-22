@@ -1,11 +1,32 @@
-Carrion Feeder
-Indulgent Aristocrat
-Undying Malice
-Viscera Seer
-Cordial Vampire
-Feast of the Victorious Dead
-Drana, Liberator of Malakir
-Markov Baron
-Profane Procession // Tomb of the Dusk Rose
-Teysa Karlov
-Revival // Revenge
+Castle Locthwain
+Necroblossom Snarl
+Witch's Clinic
+Witherbloom Campus
+Woodland Cemetery
+Arbor Elf
+Deathgreeter
+Elves of Deep Shadow
+Elvish Mystic
+Fyndhorn Elves
+Malakir Rebirth
+Phyrexian Reclamation
+Profane Memento
+Golgari Charm
+Bala Ged Recovery
+Dark Prophecy
+Fecundity
+Gaze of Granite
+Grim Haruspex
+Lifegift
+Putrefy
+Reclamation Sage
+Sedgemoor Witch
+Vito, Thorn of the Dusk Rose
+Aetherflux Reservoir
+Beast Whisperer
+Crypt Ghast
+Culling Ritual
+Savra, Queen of the Golgari
+Vraska, Golgari Queen
+Alhammarret's Archive
+Beledros Witherbloom

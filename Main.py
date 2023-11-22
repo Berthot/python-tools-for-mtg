@@ -8,14 +8,15 @@ SUMMON = 'summon'
 TAVERNA = 'taverna'
 MERURU = 'meruru'
 BLOOD = 'blood'
+OTHER = 'other'
 
 deck = Deck(prefix='', suffix='', test=False)
 
-deck.read_file(file_path='fiveColors.txt', card_ready=True)
+deck.read_file(file_path='text_cards.txt', card_ready=True)
 
 print(deck)
 
-deck.buy_cards(store=PRIME_MTG)
+deck.buy_cards(store=OTHER)
 
 deck.write_in_file()
 

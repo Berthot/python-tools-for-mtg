@@ -21,6 +21,9 @@ class Font:
             return f'https://www.ligamagic.com.br/?view=cards%2Fsearch&card={card_name}'
         if store == 'blood':
             return f'https://www.lojabloodmoon.com.br/?view=ecom%2Fitens&id=64102&searchExactMatch=&busca={card_name}'
+        if store == 'other':
+            return f'https://www.mineralgames.com.br/?view=ecom%2Fitens&id=9781&searchExactMatch=&busca={card_name}&btnEnviar=1'
+
 
 
 class Card:
