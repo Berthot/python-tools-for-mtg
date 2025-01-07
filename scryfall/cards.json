@@ -1,0 +1,170 @@
+[
+    {
+        "quantity": null,
+        "name": "Carmen, Cruel Skymarcher",
+        "mana_cost": "{3}{W}{B}",
+        "cmc": 5.0,
+        "card_type": "Legendary Creature — Vampire Soldier",
+        "card_description": "Flying\nWhenever a player sacrifices a permanent, put a +1/+1 counter on Carmen, Cruel Skymarcher and you gain 1 life.\nWhenever Carmen attacks, return up to one target permanent card with mana value less than or equal to Carmen's power from your graveyard to the battlefield."
+    },
+    {
+        "quantity": null,
+        "name": "Mockingbird",
+        "mana_cost": "{X}{U}",
+        "cmc": 1.0,
+        "card_type": "Creature — Bird Bard",
+        "card_description": "Flying\nYou may have Mockingbird enter as a copy of any creature on the battlefield with mana value less than or equal to the amount of mana spent to cast Mockingbird, except it's a Bird in addition to its other types and it has flying."
+    },
+    {
+        "quantity": null,
+        "name": "Gev, Scaled Scorch",
+        "mana_cost": "{B}{R}",
+        "cmc": 2.0,
+        "card_type": "Legendary Creature — Lizard Mercenary",
+        "card_description": "Ward—Pay 2 life.\nOther creatures you control enter with an additional +1/+1 counter on them for each opponent who lost life this turn.\nWhenever you cast a Lizard spell, Gev, Scaled Scorch deals 1 damage to target opponent."
+    },
+    {
+        "quantity": null,
+        "name": "Zoraline, Cosmos Caller",
+        "mana_cost": "{1}{W}{B}",
+        "cmc": 3.0,
+        "card_type": "Legendary Creature — Bat Cleric",
+        "card_description": "Flying, vigilance\nWhenever a Bat you control attacks, you gain 1 life.\nWhenever Zoraline enters or attacks, you may pay {W}{B} and 2 life. When you do, return target nonland permanent card with mana value 3 or less from your graveyard to the battlefield with a finality counter on it."
+    },
+    {
+        "quantity": null,
+        "name": "Eluge, the Shoreless Sea",
+        "mana_cost": "{1}{U}{U}{U}",
+        "cmc": 4.0,
+        "card_type": "Legendary Creature — Elemental Fish",
+        "card_description": "Eluge's power and toughness are each equal to the number of Islands you control.\nWhenever Eluge enters or attacks, put a flood counter on target land. It's an Island in addition to its other types for as long as it has a flood counter on it.\nThe first instant or sorcery spell you cast each turn costs {U} (or {1}) less to cast for each land you control with a flood counter on it."
+    },
+    {
+        "quantity": null,
+        "name": "Press the Enemy",
+        "mana_cost": "{2}{U}{U}",
+        "cmc": 4.0,
+        "card_type": "Instant",
+        "card_description": "Return target spell or nonland permanent an opponent controls to its owner's hand. You may cast an instant or sorcery spell with equal or lesser mana value from your hand without paying its mana cost."
+    },
+    {
+        "quantity": null,
+        "name": "Thundertrap Trainer",
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Creature — Otter Wizard",
+        "card_description": "Offspring {4} (You may pay an additional {4} as you cast this spell. If you do, when this creature enters, create a 1/1 token copy of it.)\nWhen this creature enters, look at the top four cards of your library. You may reveal a noncreature, nonland card from among them and put it into your hand. Put the rest on the bottom of your library in a random order."
+    },
+    {
+        "quantity": null,
+        "name": "The Infamous Cruelclaw",
+        "mana_cost": "{1}{B}{R}",
+        "cmc": 3.0,
+        "card_type": "Legendary Creature — Weasel Mercenary",
+        "card_description": "Menace\nWhenever The Infamous Cruelclaw deals combat damage to a player, exile cards from the top of your library until you exile a nonland card. You may cast that card by discarding a card rather than paying its mana cost."
+    },
+    {
+        "quantity": null,
+        "name": "Valley Floodcaller",
+        "mana_cost": "{2}{U}",
+        "cmc": 3.0,
+        "card_type": "Creature — Otter Wizard",
+        "card_description": "Flash\nYou may cast noncreature spells as though they had flash.\nWhenever you cast a noncreature spell, Birds, Frogs, Otters, and Rats you control get +1/+1 until end of turn. Untap them."
+    },
+    {
+        "quantity": null,
+        "name": "Infernal Sovereign",
+        "mana_cost": "{4}{B}{B}",
+        "cmc": 6.0,
+        "card_type": "Creature — Demon",
+        "card_description": "Flying, trample\nSkip your draw step.\nWhenever you play a land or cast a spell, you draw a card and you lose 1 life."
+    },
+    {
+        "quantity": null,
+        "name": "Alhammarret's Archive",
+        "mana_cost": "{5}",
+        "cmc": 5.0,
+        "card_type": "Legendary Artifact",
+        "card_description": "If you would gain life, you gain twice that much life instead.\nIf you would draw a card except the first one you draw in each of your draw steps, draw two cards instead."
+    },
+    {
+        "quantity": null,
+        "name": "Oath of Eorl",
+        "mana_cost": "{3}{R}{W}",
+        "cmc": 5.0,
+        "card_type": "Enchantment — Saga",
+        "card_description": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI — Create two 1/1 white Human Soldier creature tokens.\nII — Create two 2/2 red Human Knight creature tokens with trample and haste.\nIII — Put an indestructible counter on up to one target Human. You become the monarch."
+    },
+    {
+        "quantity": null,
+        "name": "Restless Prairie",
+        "mana_cost": "",
+        "cmc": 0.0,
+        "card_type": "Land",
+        "card_description": "Restless Prairie enters tapped.\n{T}: Add {G} or {W}.\n{2}{G}{W}: Restless Prairie becomes a 3/3 green and white Llama creature until end of turn. It's still a land.\nWhenever Restless Prairie attacks, other creatures you control get +1/+1 until end of turn."
+    },
+    {
+        "quantity": null,
+        "name": "Storm of Saruman",
+        "mana_cost": "{4}{U}{U}",
+        "cmc": 6.0,
+        "card_type": "Enchantment",
+        "card_description": "Ward {3}\nWhenever you cast your second spell each turn, copy it, except the copy isn't legendary. You may choose new targets for the copy. (A copy of a permanent spell becomes a token.)"
+    },
+    {
+        "quantity": null,
+        "name": "Haughty Djinn",
+        "mana_cost": "{1}{U}{U}",
+        "cmc": 3.0,
+        "card_type": "Creature — Djinn",
+        "card_description": "Flying\nHaughty Djinn's power is equal to the number of instant and sorcery cards in your graveyard.\nInstant and sorcery spells you cast cost {1} less to cast."
+    },
+    {
+        "quantity": null,
+        "name": "Springheart Nantuko",
+        "mana_cost": "{1}{G}",
+        "cmc": 2.0,
+        "card_type": "Enchantment Creature — Insect Monk",
+        "card_description": "Bestow {1}{G}\nEnchanted creature gets +1/+1.\nLandfall — Whenever a land you control enters, you may pay {1}{G} if Springheart Nantuko is attached to a creature you control. If you do, create a token that's a copy of that creature. If you didn't create a token this way, create a 1/1 green Insect creature token."
+    },
+    {
+        "quantity": null,
+        "name": "Pashalik Mons",
+        "mana_cost": "{2}{R}",
+        "cmc": 3.0,
+        "card_type": "Legendary Creature — Goblin Warrior",
+        "card_description": "Whenever Pashalik Mons or another Goblin you control dies, Pashalik Mons deals 1 damage to any target.\n{3}{R}, Sacrifice a Goblin: Create two 1/1 red Goblin creature tokens."
+    },
+    {
+        "quantity": null,
+        "name": "Demonic Counsel",
+        "mana_cost": "{1}{B}",
+        "cmc": 2.0,
+        "card_type": "Sorcery",
+        "card_description": "Search your library for a Demon card, reveal it, put it into your hand, then shuffle.\nDelirium — If there are four or more card types among cards in your graveyard, instead search your library for any card, put it into your hand, then shuffle."
+    },
+    {
+        "quantity": null,
+        "name": "Double Major",
+        "mana_cost": "{G}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant",
+        "card_description": "Copy target creature spell you control, except it isn't legendary if the spell is legendary. (A copy of a creature spell becomes a token.)"
+    },
+    {
+        "quantity": null,
+        "name": "Stormchaser's Talent",
+        "mana_cost": "{U}",
+        "cmc": 1.0,
+        "card_type": "Enchantment — Class",
+        "card_description": "(Gain the next level as a sorcery to add its ability.)\nWhen Stormchaser's Talent enters, create a 1/1 blue and red Otter creature token with prowess.\n{3}{U}: Level 2\nWhen this Class becomes level 2, return target instant or sorcery card from your graveyard to your hand.\n{5}{U}: Level 3\nWhenever you cast an instant or sorcery spell, create a 1/1 blue and red Otter creature token with prowess."
+    },
+    {
+        "quantity": null,
+        "name": "Gisa, the Hellraiser",
+        "mana_cost": "{3}{B}{B}",
+        "cmc": 5.0,
+        "card_type": "Legendary Creature — Human Warlock",
+        "card_description": "Ward—{2}, Pay 2 life.\nSkeletons and Zombies you control get +1/+1 and have menace.\nWhenever you commit a crime, create two tapped 2/2 blue and black Zombie Rogue creature tokens. This ability triggers only once each turn. (Targeting opponents, anything they control, and/or cards in their graveyards is a crime.)"
+    }
+]

@@ -1,32 +1,21 @@
-castle locthwain
-necroblossom snarl
-witch's clinic
-witherbloom campus
-woodland cemetery
-arbor elf
-deathgreeter
-elves of deep shadow
-elvish mystic
-fyndhorn elves
-malakir rebirth
-phyrexian reclamation
-profane memento
-golgari charm
-bala ged recovery
-dark prophecy
-fecundity
-gaze of granite
-grim haruspex
-lifegift
-putrefy
-reclamation sage
-sedgemoor witch
-vito, thorn of the dusk rose
-aetherflux reservoir
-beast whisperer
-crypt ghast
-culling ritual
-savra, queen of the golgari
-vraska, golgari queen
+carmen, cruel skymarcher
+mockingbird
+gev, scaled scorch
+zoraline, cosmos caller
+eluge, the shoreless sea
+press the enemy
+thundertrap trainer
+the infamous cruelclaw
+valley floodcaller
+infernal sovereign
 alhammarret's archive
-beledros witherbloom
+oath of eorl
+restless prairie
+storm of saruman
+haughty djinn
+springheart nantuko
+pashalik mons
+demonic counsel
+double major
+stormchaser's talent
+gisa, the hellraiser

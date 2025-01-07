@@ -1,30 +1,13 @@
-1 All That Glitters
-1 Arcane Signet
-1 Armored Ascension
-1 Benevolent Blessing
-1 Cho-Manno's Blessing
-1 Darksteel Mutation
-1 Eidolon of Countless Battles
-1 Ethereal Armor
-1 Eye of Vecna
-1 Flickerform
-1 Guardian Idol
-1 Hour of Revelation
-1 Kor Spiritdancer
-1 Light-Paws, Emperor's Voice
-1 Mantle of the Ancients
-1 Mask of Law and Grace
-1 Mask of Memory
-1 Mesa Enchantress
-1 Mirror Shield
-1 Myriad Landscape
-1 Ondu Inversion // Ondu Skyruins
-1 Pentarch Ward
-1 Prismatic Lens
-1 Rogue's Passage
-1 Sage's Reverie
-1 Scarab of the Unseen
-1 Sejiri Shelter // Sejiri Glacier
-1 Shield of Duty and Reason
-1 Shielded by Faith
-1 Swiftfoot Boots
+Arcane Signet
+Evolution Witness
+Elrond, Lord of Rivendell
+Glorfindel, Dauntless Rescuer
+Myriad Landscape
+Herd Baloth
+Gnarlid Colony
+Ivy Lane Denizen
+Zegana, Utopian Speaker
+Command Tower
+Fathom Mage
+Lifecrafter's Bestiary
+Fathom Mage
