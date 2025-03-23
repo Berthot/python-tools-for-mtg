@@ -1,0 +1,85 @@
+1 Anguished Unmaking (2x2) 170 [Removal ^Don't Have,#f47373^] ^Getting,#2ccce4^
+1 Animation Module (kld) 194 [Anthem ^Don't Have,#f47373^] ^Don't Have,#f47373^
+1 Arcane Signet (clb) 298 [Ramp ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Ashnod's Altar (ema) 218 [Sac Outlet ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Ballroom (clu) 12 [Land ^Have,#37d67a^] ^Getting,#2ccce4^
+1 BartolomÃ© del Presidio (lci) 301 [Sac Outlet ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Bastion of Remembrance (j25) 403 [Drain ^Getting,#2ccce4^] ^Getting,#2ccce4^
+1 Black Market Connections (acr) 198 *E* [Draw ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Blade of the Bloodchief (zen) 196 [Anthem ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Blood Artist (2x2) 352 [Drain ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Bloodthrone Vampire (plst) ROE-98 [Sac Outlet ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Butcher of Malakir (lcc) 187 [Tribal ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Captivating Vampire (inr) 484 *F* [Bombs ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Carmen, Cruel Skymarcher (lcc) 5 [Recursion ^Have,#37d67a^] ^Have,#37d67a^
+1 Champion of Dusk (rix) 64 [Draw ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Coat of Arms (plst) DDS-58 [Anthem ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Command Tower (cc2) 8 [Land ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Cordial Vampire (lcc) 189 [Tribal ^Don't Have,#f47373^] ^Getting,#2ccce4^
+1 Corpse Knight (moc) 321 [Drain ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Cover of Darkness (acr) 89 [Evasion ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Cruel Celebrant (plst) WAR-188 [Drain ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Culling the Weak (exo) 55 [Ramp ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Deadly Dispute (j25) 115 [Draw ^Don't Have,#f47373^] ^Getting,#2ccce4^
+1 Edgar, Charmed Groom // Edgar Markov's Coffin (vow) 236 [Tokens,Anthem ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Elenda, the Dusk Rose (2x2) 207 [Commander{top} ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Evolving Wilds (dtk) 248 [Land ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Fake Your Own Death (snc) 79 *F* [Protection ^Have,#37d67a^] ^Have,#37d67a^
+1 Feed the Swarm (znr) 102 [Removal ^Have,#37d67a^] ^Have,#37d67a^
+1 Fetid Heath (otc) 295 [Land ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Forerunner of the Legion (rix) 9 [Tutor ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Gift of Immortality (ths) 14 [Protection ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Herald's Horn (clb) 862 [Ramp ^Have,#37d67a^] ^Getting,#2ccce4^
+1 High Market (afc) 246 [Land ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Infernal Grasp (mid) 107 [Removal ^Have,#37d67a^] ^Have,#37d67a^
+1 Land Tax (4ed) 34 [Ramp ^Have,#37d67a^] ^Have,#37d67a^
+1 Legion Lieutenant (rix) 163 [Anthem ^Have,#37d67a^] ^Have,#37d67a^
+1 Lunar Convocation (blb) 223 [Draw ^Have,#37d67a^] ^Have,#37d67a^
+1 Malakir Bloodwitch (voc) 131 [Bombs ^Don't Have,#f47373^] ^Don't Have,#f47373^
+1 Martyr's Cause (plst) ULG-13 [Sac Outlet ^Have,#37d67a^] ^Have,#37d67a^
+1 Mavren Fein, Dusk Apostle (lcc) 133 [Tokens ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Mirkwood Bats (ltr) 421 [Drain ^Have,#37d67a^] ^Have,#37d67a^
+1 Mortify (prna) 192 *F* [Removal ^Have,#37d67a^] ^Have,#37d67a^
+1 Mortuary Mire (c18) 266 [Land ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Myriad Landscape (cmm) 421 [Land ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Nadier's Nightblade (cmr) 136 [Drain ^Have,#37d67a^] ^Have,#37d67a^
+1 New Blood (lcc) 202 [Bombs ^Don't Have,#f47373^] ^Don't Have,#f47373^
+1 Night's Whisper (plst) EMA-100 [Draw ^Have,#37d67a^] ^Have,#37d67a^
+1 Nim Deathmantle (2x2) 309 [Bombs ^Getting,#2ccce4^] ^Getting,#2ccce4^
+1 Oathsworn Vampire (rix) 80 [Recursion ^Have,#37d67a^] ^Have,#37d67a^
+1 Opal Palace (nec) 172 [Land ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Ophiomancer (mh3) 276 [Tokens ^Getting,#2ccce4^] ^Getting,#2ccce4^
+1 Orzhov Signet (drc) 134 [Ramp ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Path to Exile (f15) 7 *F* [Removal ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Phyrexian Reclamation (ulg) 63 [Recursion ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Phyrexian Tower (mh3) 303 [Land ^Have,#37d67a^] ^Getting,#2ccce4^
+9 Plains (unf) 235 [Land ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Relic of Legends (dmu) 236 [Ramp ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Rogue's Passage (c17) 272 [Land ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Sanctum Seeker (voc) 136 [Tribal ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Sanguine Evangelist (lci) 34 [Tokens ^Have,#37d67a^] ^Have,#37d67a^
+1 Secluded Courtyard (neo) 512 *F* [Land ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Sign in Blood (mm2) 97 [Draw ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Silversmote Ghoul (c21) 154 [Recursion ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Skullclamp (blc) 283 [Draw ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Skyclave Relic (moc) 380 [Ramp ^Have,#37d67a^] ^Have,#37d67a^
+1 Slash the Ranks (cmr) 47 [Removal ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Smothering Tithe (prna) 22p [Ramp ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Sol Ring (nec) 161 [Ramp ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Sorin of House Markov // Sorin, Ravenous Neonate (mh3) 245 [Tribal ^To Remove,#0d62fa^] ^To Remove,#0d62fa^
+1 Spymaster's Vault (mh3) 230 [Land ^Have,#37d67a^] ^Getting,#2ccce4^
+9 Swamp (unf) 237 [Land ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Swiftfoot Boots (fdn) 258 [Protection ^Don't Have,#f47373^] ^Getting,#2ccce4^
+1 Swords to Plowshares (dsc) 106 [Removal ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Tainted Field (clb) 919 [Land ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Temple of Silence (pip) 1052 *F* [Land ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Terramorphic Expanse (plst) TSP-279 [Land ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Teysa Karlov (mul) 61 [Tribal ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Treacherous Greed (mkm) 237 [Draw ^Have,#37d67a^] ^Have,#37d67a^
+1 Undying Malice (vow) 134 [Protection ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Vampiric Rites (wot) 37 *F* [Draw ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Vanquish the Horde (inr) 302 [Removal ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Viscera Seer (cmr) 158 [Sac Outlet ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Vona, Butcher of Magan (lcc) 293 [Removal,Creature ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Welcoming Vampire (vow) 46 [Draw ^Have,#37d67a^] ^Getting,#2ccce4^
+1 Yahenni, Undying Partisan (lcc) 214 [Sac Outlet ^Have,#37d67a^] ^Getting,#2ccce4^

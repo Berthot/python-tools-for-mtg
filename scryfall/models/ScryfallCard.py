@@ -2,7 +2,8 @@ import requests
 from typing import List, Dict, Optional
 
 class ScryfallCard:
-    def __init__(self, name: str):
+    def __init__(self, name: str, card_deck_category: str):
+        self.deck_category = card_deck_category
         self.quantity = None
         self.name = name
         self.object = None
@@ -72,7 +73,7 @@ class ScryfallCard:
         self.purchase_uris = {}
         self.card_faces = {}
 
-        self.fetch_card_data()
+        # self.fetch_card_data()
 
     def fetch_card_data(self):
         url = f'https://api.scryfall.com/cards/named?fuzzy={self.name}'
@@ -152,6 +153,7 @@ class ScryfallCard:
     def to_dict(self):
         return {
             'quantity': self.quantity,
+            'deck_category': self.deck_category,
             'name': self.name,
             'mana_cost': self.mana_cost,
             'cmc': self.cmc,

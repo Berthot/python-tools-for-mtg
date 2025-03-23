@@ -1,0 +1,84 @@
+1x Anguished Unmaking (2x2) 170 [Removal] ^Don't Have,#f47373^
+1x Arcane Signet (tdc) 105 [Ramp] ^Have,#37d67a^
+1x Ashnod's Altar (cmm) 368 [Sacrifice Outlets] ^Have,#37d67a^
+1x Athreos, God of Passage (plst) JOU-146 [Recursion] ^Don't Have,#f47373^
+1x Ballroom (clu) 12 [Land] ^Have,#37d67a^
+1x Bartolomé del Presidio (lci) 301 [Sacrifice Outlets] ^Have,#37d67a^
+1x Bastion of Remembrance (tdc) 171 [Payoffs/Anthems] ^Have,#37d67a^
+1x Black Market Connections (acr) 87 [Card Draw] ^Have,#37d67a^
+1x Blade of the Bloodchief (lcc) 300 [Payoffs/Anthems] ^Have,#37d67a^
+1x Blood Artist (inr) 97 [Payoffs/Anthems] ^Have,#37d67a^
+1x Bloodghast (dft) 337 [Recursion] ^Don't Have,#f47373^
+1x Bloodthrone Vampire (plst) ROE-98 [Sacrifice Outlets] ^Have,#37d67a^
+1x Butcher of Malakir (lcc) 187 [Payoffs/Anthems] ^Have,#37d67a^
+1x Captivating Vampire (inr) 484 *F* [Vampires (Tribal)] ^Have,#37d67a^
+1x Champion of Dusk (lcc) 188 [Card Draw] ^Have,#37d67a^
+1x Coat of Arms (plst) DDS-58 [Payoffs/Anthems] ^Have,#37d67a^
+1x Command Tower (tdc) 107 [Land] ^Have,#37d67a^
+1x Cordial Vampire (lcc) 189 [Payoffs/Anthems] ^Proxy,#effa0d^
+1x Corpse Knight (drc) 50 [Payoffs/Anthems] ^Have,#37d67a^
+1x Cover of Darkness (acr) 89 [Payoffs/Anthems] ^Have,#37d67a^
+1x Cruel Celebrant (lcc) 267 [Payoffs/Anthems] ^Have,#37d67a^
+1x Culling the Weak (mb2) 40 [Ramp] ^Have,#37d67a^
+1x Dawn's Truce (blb) 9 [Protection] ^Have,#37d67a^
+1x Deadly Dispute (tdc) 177 [Card Draw] ^Proxy,#effa0d^
+1x Diabolic Intent (bro) 89 [Utility] ^Proxy,#effa0d^
+1x Dictate of Erebos (plst) JOU-65 [Payoffs/Anthems] ^Proxy,#effa0d^
+1x Drana, Liberator of Malakir (lcc) 193 [Payoffs/Anthems] ^Have,#37d67a^
+1x Dusk // Dawn (drc) 65 [Recursion] ^Don't Have,#f47373^
+1x Edgar, Charmed Groom // Edgar Markov's Coffin (vow) 236 [Token Generation] ^Have,#37d67a^
+1x Eldrazi Monument (plst) CMA-216 [Payoffs/Anthems] ^Don't Have,#f47373^
+1x Elenda, the Dusk Rose (lcc) 268 [Commander{top}] ^Have,#37d67a^
+1x Evolving Wilds (tdm) 255 [Land] ^Have,#37d67a^
+1x Fetid Heath (tdc) 362 [Land] ^Have,#37d67a^
+1x Forbidden Orchard (2x2) 405 [Land] ^Have,#37d67a^
+1x Forerunner of the Legion (rix) 9 [Utility] ^Have,#37d67a^
+1x Gift of Immortality (ths) 14 [Protection] ^Have,#37d67a^
+1x Heliod's Intervention (otc) 81 [Removal] ^Don't Have,#f47373^
+1x Herald's Horn (lcc) 304 [Vampires (Tribal)] ^Have,#37d67a^
+1x High Market (afc) 246 [Land] ^Have,#37d67a^
+1x Kalitas, Traitor of Ghet (plst) OGW-86 [Removal] ^Don't Have,#f47373^
+1x Mavren Fein, Dusk Apostle (lcc) 133 [Token Generation] ^Have,#37d67a^
+1x Mirror Entity (otc) 83 [Payoffs/Anthems] ^Don't Have,#f47373^
+1x Mortuary Mire (pip) 272 [Land] ^Have,#37d67a^
+1x Myriad Landscape (tdc) 380 [Land] ^Have,#37d67a^
+1x Night's Whisper (j25) 471 [Card Draw] ^Have,#37d67a^
+1x Opal Palace (cmm) 422 [Land] ^Have,#37d67a^
+1x Ophiomancer (tdc) 193 [Token Generation] ^Have,#37d67a^
+1x Orzhov Signet (drc) 134 [Ramp] ^Have,#37d67a^
+1x Path to Exile (mb2) 15 [Removal] ^Have,#37d67a^
+1x Pawn of Ulamog (plst) ROE-122 [Token Generation] ^Don't Have,#f47373^
+1x Phyrexian Reclamation (tdc) 194 [Recursion] ^Have,#37d67a^
+1x Phyrexian Tower (mh3) 303 [Land] ^Have,#37d67a^
+1x Pitiless Plunderer (j25) 476 [Ramp] ^Proxy,#effa0d^
+9x Plains (tdm) 278 [Land] ^Have,#37d67a^
+1x Reanimate (dsc) 155 [Recursion] ^Proxy,#effa0d^
+1x Relic of Legends (dmu) 236 [Ramp] ^Have,#37d67a^
+1x Rogue's Passage (otc) 313 [Land] ^Have,#37d67a^
+1x Sanctum Seeker (j25) 485 [Vampires (Tribal)] ^Have,#37d67a^
+1x Secluded Courtyard (neo) 512 *F* [Land] ^Have,#37d67a^
+1x Shadowy Backstreet (mkm) 268 *F* [Land] ^Have,#37d67a^
+1x Silversmote Ghoul (c21) 154 [Recursion] ^Have,#37d67a^
+1x Skullclamp (tdc) 103 [Card Draw] ^Have,#37d67a^
+1x Slash the Ranks (cmr) 47 [Removal] ^Have,#37d67a^
+1x Smothering Tithe (cmm) 57 [Ramp] ^Have,#37d67a^
+1x Sol Ring (tdc) 106 [Ramp] ^Have,#37d67a^
+1x Spymaster's Vault (mh3) 230 [Land] ^Have,#37d67a^
+9x Swamp (tdm) 282 [Land] ^Have,#37d67a^
+1x Swiftfoot Boots (fdn) 258 [Protection] ^Don't Have,#f47373^
+1x Swords to Plowshares (tdc) 134 [Removal] ^Have,#37d67a^
+1x Tainted Field (dsc) 302 [Land] ^Have,#37d67a^
+1x Talisman of Hierarchy (tdc) 331 [Ramp] ^Don't Have,#f47373^
+1x Temple of Silence (tdc) 406 [Land] ^Have,#37d67a^
+1x Terramorphic Expanse (tdc) 408 [Land] ^Have,#37d67a^
+1x Teysa Karlov (cmm) 359 [Payoffs/Anthems] ^Have,#37d67a^
+1x The Ozolith (iko) 237 [Utility] ^Have,#37d67a^
+1x Twilight Prophet (mkc) 143 [Card Draw] ^Have,#37d67a^
+1x Undying Malice (vow) 134 [Protection] ^Have,#37d67a^
+1x Vampiric Rites (j22) 484 [Card Draw] ^Have,#37d67a^
+1x Vanquish the Horde (inr) 302 [Removal] ^Have,#37d67a^
+1x Victimize (tdc) 198 [Recursion] ^Have,#37d67a^
+1x Viscera Seer (tdc) 199 [Sacrifice Outlets] ^Have,#37d67a^
+1x Vona, Butcher of Magan (lcc) 293 [Removal] ^Have,#37d67a^
+1x Welcoming Vampire (mkc) 91 [Card Draw] ^Have,#37d67a^
+1x Yahenni, Undying Partisan (tdc) 202 [Sacrifice Outlets] ^Have,#37d67a^

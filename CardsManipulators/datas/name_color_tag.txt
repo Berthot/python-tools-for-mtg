@@ -1,0 +1,84 @@
+1 Anguished Unmaking ^Don't Have,#f47373^
+1 Arcane Signet ^Have,#37d67a^
+1 Ashnod's Altar ^Have,#37d67a^
+1 Athreos, God of Passage ^Don't Have,#f47373^
+1 Ballroom ^Have,#37d67a^
+1 Bartolomé del Presidio ^Have,#37d67a^
+1 Bastion of Remembrance ^Have,#37d67a^
+1 Black Market Connections ^Have,#37d67a^
+1 Blade of the Bloodchief ^Have,#37d67a^
+1 Blood Artist ^Have,#37d67a^
+1 Bloodghast ^Don't Have,#f47373^
+1 Bloodthrone Vampire ^Have,#37d67a^
+1 Butcher of Malakir ^Have,#37d67a^
+1 Captivating Vampire ^Have,#37d67a^
+1 Champion of Dusk ^Have,#37d67a^
+1 Coat of Arms ^Have,#37d67a^
+1 Command Tower ^Have,#37d67a^
+1 Cordial Vampire ^Proxy,#effa0d^
+1 Corpse Knight ^Have,#37d67a^
+1 Cover of Darkness ^Have,#37d67a^
+1 Cruel Celebrant ^Have,#37d67a^
+1 Culling the Weak ^Have,#37d67a^
+1 Dawn's Truce ^Have,#37d67a^
+1 Deadly Dispute ^Proxy,#effa0d^
+1 Diabolic Intent ^Proxy,#effa0d^
+1 Dictate of Erebos ^Proxy,#effa0d^
+1 Drana, Liberator of Malakir ^Have,#37d67a^
+1 Dusk // Dawn ^Don't Have,#f47373^
+1 Edgar, Charmed Groom // Edgar Markov's Coffin ^Have,#37d67a^
+1 Eldrazi Monument ^Don't Have,#f47373^
+1 Elenda, the Dusk Rose ^Have,#37d67a^
+1 Evolving Wilds ^Have,#37d67a^
+1 Fetid Heath ^Have,#37d67a^
+1 Forbidden Orchard ^Have,#37d67a^
+1 Forerunner of the Legion ^Have,#37d67a^
+1 Gift of Immortality ^Have,#37d67a^
+1 Heliod's Intervention ^Don't Have,#f47373^
+1 Herald's Horn ^Have,#37d67a^
+1 High Market ^Have,#37d67a^
+1 Kalitas, Traitor of Ghet ^Don't Have,#f47373^
+1 Mavren Fein, Dusk Apostle ^Have,#37d67a^
+1 Mirror Entity ^Don't Have,#f47373^
+1 Mortuary Mire ^Have,#37d67a^
+1 Myriad Landscape ^Have,#37d67a^
+1 Night's Whisper ^Have,#37d67a^
+1 Opal Palace ^Have,#37d67a^
+1 Ophiomancer ^Have,#37d67a^
+1 Orzhov Signet ^Have,#37d67a^
+1 Path to Exile ^Have,#37d67a^
+1 Pawn of Ulamog ^Don't Have,#f47373^
+1 Phyrexian Reclamation ^Have,#37d67a^
+1 Phyrexian Tower ^Have,#37d67a^
+1 Pitiless Plunderer ^Proxy,#effa0d^
+9 Plains ^Have,#37d67a^
+1 Reanimate ^Proxy,#effa0d^
+1 Relic of Legends ^Have,#37d67a^
+1 Rogue's Passage ^Have,#37d67a^
+1 Sanctum Seeker ^Have,#37d67a^
+1 Secluded Courtyard ^Have,#37d67a^
+1 Shadowy Backstreet ^Have,#37d67a^
+1 Silversmote Ghoul ^Have,#37d67a^
+1 Skullclamp ^Have,#37d67a^
+1 Slash the Ranks ^Have,#37d67a^
+1 Smothering Tithe ^Have,#37d67a^
+1 Sol Ring ^Have,#37d67a^
+1 Spymaster's Vault ^Have,#37d67a^
+9 Swamp ^Have,#37d67a^
+1 Swiftfoot Boots ^Don't Have,#f47373^
+1 Swords to Plowshares ^Have,#37d67a^
+1 Tainted Field ^Have,#37d67a^
+1 Talisman of Hierarchy ^Don't Have,#f47373^
+1 Temple of Silence ^Have,#37d67a^
+1 Terramorphic Expanse ^Have,#37d67a^
+1 Teysa Karlov ^Have,#37d67a^
+1 The Ozolith ^Have,#37d67a^
+1 Twilight Prophet ^Have,#37d67a^
+1 Undying Malice ^Have,#37d67a^
+1 Vampiric Rites ^Have,#37d67a^
+1 Vanquish the Horde ^Have,#37d67a^
+1 Victimize ^Have,#37d67a^
+1 Viscera Seer ^Have,#37d67a^
+1 Vona, Butcher of Magan ^Have,#37d67a^
+1 Welcoming Vampire ^Have,#37d67a^
+1 Yahenni, Undying Partisan ^Have,#37d67a^

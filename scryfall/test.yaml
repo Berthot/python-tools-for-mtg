@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: minha-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: minha-app # ⚠️ Obrigatório!
+  template:
+    metadata:
+      labels:
+        app: minha-app # ⚠️ Deve bater com o selector
+    spec:
+      containers:
+        - name: container-app
+          image: nginx:latest # Imagem genérica para exemplo

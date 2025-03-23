@@ -16,7 +16,7 @@ deck.read_file(file_path='text_cards.txt', card_ready=True)
 
 print(deck)
 
-deck.buy_cards(store=LIGA)
+deck.buy_cards(store=VILA)
 
 deck.write_in_file()
 

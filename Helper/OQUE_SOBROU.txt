@@ -1,0 +1,18 @@
+1 Athreos, God of Passage (plst) JOU-146 [OUT_BY_GPT] ^Don't Have,#f47373^
+1 Bloodghast (dft) 77 [OUT_BY_GPT] ^Don't Have,#f47373^
+1 Diabolic Intent (bro) 89 [OUT_BY_GPT] ^Don't Have,#f47373^
+1 Dictate of Erebos (plst) JOU-65 [OUT_BY_GPT] ^Don't Have,#f47373^
+1 Drana, Liberator of Malakir (lcc) 193 [OUT_BY_GPT] ^Don't Have,#f47373^
+1 Dusk // Dawn (drc) 65 [OUT_BY_GPT] ^Don't Have,#f47373^
+1 Eldrazi Monument (plst) CMA-216 [OUT_BY_GPT] ^Don't Have,#f47373^
+1 Enlightened Tutor (dmr) 6 [OUT_BY_GPT] ^Don't Have,#f47373^
+1 Heliod's Intervention (otc) 81 [OUT_BY_GPT] ^Don't Have,#f47373^
+1 Kalitas, Traitor of Ghet (plst) OGW-86 [OUT_BY_GPT] ^Don't Have,#f47373^
+1 Mirror Entity (otc) 83 [OUT_BY_GPT] ^Don't Have,#f47373^
+1 Pawn of Ulamog (plst) ROE-122 [OUT_BY_GPT] ^Don't Have,#f47373^
+1 Pitiless Plunderer (j25) 476 [OUT_BY_GPT] ^Don't Have,#f47373^
+1 Reanimate (dsc) 155 [OUT_BY_GPT] ^Don't Have,#f47373^
+1 Talisman of Hierarchy (tdc) 331 [OUT_BY_GPT] ^Don't Have,#f47373^
+1 Teferi's Protection (2x2) 32 [OUT_BY_GPT] ^Don't Have,#f47373^
+1 Twilight Prophet (mkc) 143 [OUT_BY_GPT] ^Don't Have,#f47373^
+1 Victimize (tdc) 198 [OUT_BY_GPT] ^Don't Have,#f47373^
