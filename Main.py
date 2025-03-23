@@ -1,4 +1,4 @@
-from magic.Deck import Deck
+from scryfall.models.DeckToBuy import DeckToBuy
 
 LIGA = 'liga'
 VILA = 'vila'
@@ -10,7 +10,7 @@ MERURU = 'meruru'
 BLOOD = 'blood'
 OTHER = 'other'
 
-deck = Deck(prefix='', suffix='', test=False)
+deck = DeckToBuy(prefix='', suffix='', test=False)
 
 deck.read_file(file_path='text_cards.txt', card_ready=True)
 

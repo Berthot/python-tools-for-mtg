@@ -50,7 +50,7 @@ class Deck:
             card_data = scryfall_data.get(card.name)
             if card_data:
                 scryfall_card = ScryfallCard(deck_category=card.category, name=card.name)
-                scryfall_card.from_scryfall_data(card_data)
+                scryfall_card.fill_all_fields_from_scryfall_data(card_data)
                 card.scryfall_card = scryfall_card
                 card.found_in_scryfall = True
             else:

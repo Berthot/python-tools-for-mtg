@@ -1,7 +1,7 @@
 import requests
 from typing import List, Dict, Optional
 
-class ScryfallCard:
+class FullScryfallCard:
     def __init__(self, name: str, card_deck_category: str):
         self.deck_category = card_deck_category
         self.quantity = None

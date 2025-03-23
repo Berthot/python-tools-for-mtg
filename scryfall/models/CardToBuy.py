@@ -26,7 +26,7 @@ class Font:
 
 
 
-class Card:
+class CardToBuy:
     def __init__(self, _input: str, _from: str, card_ready: bool = False):
         self._card_ready = card_ready
         self.is_valid = False

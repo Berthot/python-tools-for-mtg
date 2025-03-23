@@ -1,17 +1,17 @@
-from magic.Card import Card, Font
+from scryfall.models.CardToBuy import CardToBuy, Font
 import webbrowser
 
 
-class Deck:
+class DeckToBuy:
     def __init__(self, prefix: str = '', suffix: str = '', test: bool = False):
         self._test = test
-        self.cards: [Card] = []
+        self.cards: [CardToBuy] = []
         self._total_lines = 0
         self.deck_size = len(self.cards)
         self._prefix = prefix
         self._suffix = suffix
 
-    def add_card(self, card: Card):
+    def add_card(self, card: CardToBuy):
         if card.is_valid:
             self.cards.append(card)
 
@@ -20,7 +20,7 @@ class Deck:
             file = deck_file.read().split('\n')
             self._total_lines = len(file)
             for i in file:
-                card = Card(i, font, card_ready)
+                card = CardToBuy(i, font, card_ready)
                 if card.card_name in [x.card_name for x in self.cards]:
                     continue
                 self.add_card(card)
