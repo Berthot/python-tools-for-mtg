@@ -108,31 +108,31 @@ class ScryfallRepository:
         card_object.advanced_scryfall_data(card_dict)
         return card_object
 
-# Criando uma instância do CardRepository
-repository = ScryfallRepository()
-print(len(repository.cards))
-
-# Criando algumas cartas
-card1 = Scryfall(name="Lightning Bolt")
-card2 = Scryfall(name="Counterspell")
-
-# Adicionando cartas ao repositório
-repository.add_card(card1)
-repository.add_card(card2)
-# repository.add_card(card3)
-
-# Salvando as alterações
-repository.save_changes()
-
-# Buscando uma carta pelo nome
-found_card = repository.get_card_by_name("Lightning Bolt")
-shock_card = repository.get_card_by_name("sol ring")
-print(shock_card)
-if found_card:
-    print(found_card)  # Exibe o objeto Card
-
-# Buscando todas as cartas
-all_cards = repository.get_cards()
-for card in all_cards:
-    print(card)
+# # Criando uma instância do CardRepository
+# repository = ScryfallRepository()
+# print(len(repository.cards))
+#
+# # Criando algumas cartas
+# card1 = Scryfall(name="Lightning Bolt")
+# card2 = Scryfall(name="Counterspell")
+#
+# # Adicionando cartas ao repositório
+# repository.add_card(card1)
+# repository.add_card(card2)
+# # repository.add_card(card3)
+#
+# # Salvando as alterações
+# repository.save_changes()
+#
+# # Buscando uma carta pelo nome
+# found_card = repository.get_card_by_name("Lightning Bolt")
+# shock_card = repository.get_card_by_name("sol ring")
+# print(shock_card)
+# if found_card:
+#     print(found_card)  # Exibe o objeto Card
+#
+# # Buscando todas as cartas
+# all_cards = repository.get_cards()
+# for card in all_cards:
+#     print(card)
 

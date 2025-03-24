@@ -1,4 +1,6 @@
+import json
 import webbrowser
+from dataclasses import asdict
 
 from Clients.ScryfallClient import ScryfallClient
 from Entities.Card import Card
@@ -52,6 +54,17 @@ class DeckService:
         if var != 's':
             return
         self.liga_service.buy_cards(deck=deck_, store=store)
+
+    def save_deck_in_json(self, deck: Deck, file_path: str = "../Files/deck_list.json"):
+        cards_dict = [self._card_to_dict(card) for card in deck.cards]
+        with open(file_path, 'w', encoding='utf-8') as json_file:
+            json.dump(cards_dict, json_file, ensure_ascii=False, indent=4)
+
+    def _card_to_dict(self, card: Card) -> dict:
+        card_dict = asdict(card)
+        if card.scryfall:
+            card_dict['scryfall'] = asdict(card.scryfall)
+        return card_dict
 
 
 #
