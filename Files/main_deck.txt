@@ -1,2 +1,6 @@
-1x Anguished Unmaking (2x2) 170 [Removal] ^Don't Have,#f47373^
-1x Arcane Signet (tdc) 105 [Ramp] ^Have,#37d67a^
+1x Phyrexian Tower (mh3) 303 [Land] ^Have,#37d67a^
+1x Yahenni, Undying Partisan (tdc) 202 [Sacrifice Outlets] ^Have,#37d67a^
+1x Dictate of Erebos (plst) JOU-65 [Payoffs/Anthems] ^Have,#37d67a^
+1x Black Market Connections (acr) 87 [Card Draw] ^Have,#37d67a^
+1x Elenda, the Dusk Rose (lcc) 268 [Commander{top}] ^Have,#37d67a^
+1x Athreos, God of Passage (plst) JOU-146 [Recursion] ^Don't Have,#f47373^

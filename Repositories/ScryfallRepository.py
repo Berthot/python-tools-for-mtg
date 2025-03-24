@@ -8,10 +8,10 @@ from Entities.Scryfall import Scryfall
 
 
 class ScryfallRepository:
-    def __init__(self, file_path: str = "cards.msgpack"):
+    def __init__(self, file_path: str = "./Repositories/cards.msgpack"):
         self.file_path = file_path
         if not os.path.exists(self.file_path):
-            with open(f"{self.file_path}", "wb") as file:
+            with open(file_path, "wb") as file:
                 file.write(msgpack.packb([], use_bin_type=True))
         self.cards: List[Scryfall] = self._load_cards()
         self.temporary: List[Scryfall] = []

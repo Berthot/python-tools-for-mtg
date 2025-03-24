@@ -1,8 +1,11 @@
+import json
 import re
 from dataclasses import dataclass, field
 from typing import Optional, List
+from uuid import UUID
 
 from Entities.Card import Card
+from Entities.enums.EExportFormat import EExportFormat
 
 
 @dataclass
@@ -19,8 +22,6 @@ class Deck:
     def add_card(self, card: Card):
         self.cards.append(card)
 
-
-
     def load_from_file(self, file_path: str):
         with open(file_path, 'r', encoding='utf-8') as file:
             for line in file:
@@ -34,6 +35,36 @@ class Deck:
         if not self.not_found_cards:
             self.not_found_cards = [card for card in self.cards if not card.has_scryfall]
         return self.not_found_cards
+
+    def export(self, format: EExportFormat = EExportFormat.JSON, full: bool = False,
+               file_path: str = "Files/deck_list.json") -> str:
+        """
+        Exporta o deck como JSON ou como texto (formato Archidekt-like).
+
+        Args:
+            format (str): 'json' ou 'archidekt'
+            full (bool): Se true, exporta dados completos (para JSON)
+
+        Returns:
+            str: Representação exportada do deck
+            :param file_path:
+        """
+
+        def default_serializer(obj):
+            if isinstance(obj, UUID):
+                return str(obj)
+            raise TypeError(f"Type {type(obj)} not serializable")
+
+        cards_dict = [card.export_as_dict(full) for card in self.cards]
+
+        if format == EExportFormat.JSON:
+            with open(file_path, 'w', encoding='utf-8') as json_file:
+                json.dump(cards_dict, json_file, default=default_serializer, indent=4, ensure_ascii=False)
+        elif format == EExportFormat.ARCHIDEKT:
+            with open(file_path, 'w', encoding='utf-8') as json_file:
+                json.dump(cards_dict, json_file, default=default_serializer, indent=4, ensure_ascii=False)
+        else:
+            raise ValueError("Formato de exportação inválido. Use 'json' ou 'archidekt'.")
 
     @staticmethod
     def parse_card_line(line: str) -> Card:
