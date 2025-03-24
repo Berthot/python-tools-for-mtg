@@ -38,7 +38,7 @@ pip install -r requirements.txt  # se aplicável
 ### 2. Exemplo de uso básico
 
 ```python
-    deck_service = DeckService()
+deck_service = DeckService()
 liga_service = LigaService()
 
 # 📥 Carrega o primeiro deck a partir do arquivo
