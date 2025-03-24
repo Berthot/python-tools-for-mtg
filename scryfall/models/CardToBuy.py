@@ -1,7 +1,4 @@
 class Font:
-    to_buy_vila = 'to_buy_vila'
-    bought_vila = 'bought_vila'
-    liga = 'liga'
 
     @staticmethod
     def get_url(card_name: str, store: str) -> str:

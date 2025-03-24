@@ -28,18 +28,18 @@ class ScryfallClient:
                     scryfall_cards.append(card)
         return scryfall_cards
 
-# Criando uma instância do ScryfallClient
-scryfall_client = ScryfallClient()
-
-# Lista de nomes de cartas para buscar
-card_list = ["Counterspell", "Shock"]
-
-# Buscando os dados das cartas
-fetched_cards = scryfall_client.get_cards_by_names(card_list)
-
-# Exibindo os dados retornados
-for scryfall_card in fetched_cards:
-    print(f"Dados da carta '{scryfall_card.name}':")
-    print(f"  Tipo: {scryfall_card.type_line}")
-    print(f"  Texto Oracle: {scryfall_card.oracle_text}")
-    print("-" * 40)
+# # Criando uma instância do ScryfallClient
+# scryfall_client = ScryfallClient()
+#
+# # Lista de nomes de cartas para buscar
+# card_list = ["Counterspell", "Shock"]
+#
+# # Buscando os dados das cartas
+# fetched_cards = scryfall_client.get_cards_by_names(card_list)
+#
+# # Exibindo os dados retornados
+# for scryfall_card in fetched_cards:
+#     print(f"Dados da carta '{scryfall_card.name}':")
+#     print(f"  Tipo: {scryfall_card.type_line}")
+#     print(f"  Texto Oracle: {scryfall_card.oracle_text}")
+#     print("-" * 40)

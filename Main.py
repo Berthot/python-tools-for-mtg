@@ -1,4 +1,5 @@
-from scryfall.models.DeckToBuy import DeckToBuy
+from Entities.Deck import Deck
+from Services.DeckService import DeckService
 
 LIGA = 'liga'
 VILA = 'vila'
@@ -10,18 +11,11 @@ MERURU = 'meruru'
 BLOOD = 'blood'
 OTHER = 'other'
 
-deck = DeckToBuy(prefix='', suffix='', test=False)
+if __name__ == "__main__":
+    deck_service = DeckService()
+    main_deck_path = 'Files/main_deck.txt'  # Substitua pelo caminho correto do seu arquivo
+    main_deck = Deck(main_deck_path)
 
-deck.read_file(file_path='text_cards.txt', card_ready=True)
+    deck_service.buy_cards(main_deck)
 
-print(deck)
-
-deck.buy_cards(store=VILA)
-
-deck.write_in_file()
-
-# 3 Plains
-# 3 Forest
-# 3 Island
-# 3 Mountain
-# 3 Swamp
+    main_deck.print_deck_list()

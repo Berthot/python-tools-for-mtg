@@ -73,6 +73,9 @@ class Scryfall:
     related_uris: Dict[str, str] = field(default_factory=dict)
     purchase_uris: Dict[str, str] = field(default_factory=dict)
 
+    def __str__(self):
+        return f"ScryFallç.Name: {self.name}"
+
     @classmethod
     def from_name(cls, name: str):
         """ Preenche apenas o campo nome. """
@@ -86,9 +89,6 @@ class Scryfall:
         scryfall = cls()
         scryfall.advanced_scryfall_data(json)
         return scryfall
-
-    def __str__(self):
-        return f"scryfall.name: {self.name}"
 
     def advanced_scryfall_data(self, data: Dict):
         """Preenche todos os campos da classe com base nos dados da API."""
