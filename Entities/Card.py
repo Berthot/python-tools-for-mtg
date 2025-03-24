@@ -12,7 +12,7 @@ class Card:
     name: str = None
     collection: Optional[str] = None
     quantity: Optional[int] = None
-    deck_category: Optional[str] = None
+    deck_category: Optional[str] = ""
     color_tag: Optional[str] = None
     scryfall: Optional[Scryfall] = None
     has_scryfall: bool = scryfall is not None
@@ -23,7 +23,6 @@ class Card:
             name=name.strip(),
             collection=None,
             quantity=1,
-            deck_category=None,
             color_tag=None
         )
 
@@ -44,10 +43,10 @@ class Card:
             parts[-1] += f" ({self.collection})"
 
         if self.deck_category:
-            parts.append(f" [{self.deck_category}]")
+            parts.append(f"[{self.deck_category}]")
 
         if self.color_tag:
-            parts.append(f" ^{self.color_tag}^")
+            parts.append(f"^{self.color_tag}^")
 
         return ' '.join(parts)
 
@@ -86,4 +85,4 @@ class Card:
         return self.name.split('//')[0].strip()
 
     def __str__(self):
-        return f"{self.quantity}x {self.name}"
+        return self.to_deck_archidekt_line()

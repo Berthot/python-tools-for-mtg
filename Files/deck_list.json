@@ -20,7 +20,7 @@
     {
         "quantity": 1,
         "name": "Dictate of Erebos",
-        "deck_category": null,
+        "deck_category": "Payoffs/Anthems",
         "mana_cost": "{3}{B}{B}",
         "cmc": 5,
         "card_type": "Enchantment",
@@ -38,7 +38,7 @@
     {
         "quantity": 1,
         "name": "Elenda, the Dusk Rose",
-        "deck_category": "Commander{top}",
+        "deck_category": "OLHA_EU_MUDEI",
         "mana_cost": "{2}{W}{B}",
         "cmc": 4,
         "card_type": "Legendary Creature — Vampire Knight",
@@ -47,7 +47,7 @@
     {
         "quantity": 1,
         "name": "Athreos, God of Passage",
-        "deck_category": null,
+        "deck_category": "Recursion",
         "mana_cost": "{1}{W}{B}",
         "cmc": 3,
         "card_type": "Legendary Enchantment Creature — God",

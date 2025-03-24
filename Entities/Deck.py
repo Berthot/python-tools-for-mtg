@@ -12,7 +12,7 @@ from Entities.enums.EExportFormat import EExportFormat
 class Deck:
     cards: List[Card] = field(default_factory=list)
     scryfall_fetched: bool = False
-
+    _base_path: str = 'Files'
     def __init__(self, file_path: Optional[str] = None):
         self.cards = []
         self.not_found_cards = []
@@ -36,8 +36,7 @@ class Deck:
             self.not_found_cards = [card for card in self.cards if not card.has_scryfall]
         return self.not_found_cards
 
-    def export(self, format: EExportFormat = EExportFormat.JSON, full: bool = False,
-               file_path: str = "Files/deck_list.json") -> str:
+    def export(self, format: EExportFormat = EExportFormat.JSON, full: bool = False) -> str:
         """
         Exporta o deck como JSON ou como texto (formato Archidekt-like).
 
@@ -47,7 +46,6 @@ class Deck:
 
         Returns:
             str: Representação exportada do deck
-            :param file_path:
         """
 
         def default_serializer(obj):
@@ -55,31 +53,47 @@ class Deck:
                 return str(obj)
             raise TypeError(f"Type {type(obj)} not serializable")
 
-        cards_dict = [card.export_as_dict(full) for card in self.cards]
-
         if format == EExportFormat.JSON:
-            with open(file_path, 'w', encoding='utf-8') as json_file:
-                json.dump(cards_dict, json_file, default=default_serializer, indent=4, ensure_ascii=False)
+            self._export_as_json(default_serializer, full)
         elif format == EExportFormat.ARCHIDEKT:
-            with open(file_path, 'w', encoding='utf-8') as json_file:
-                json.dump(cards_dict, json_file, default=default_serializer, indent=4, ensure_ascii=False)
+            self._export_as_archidekt()
         else:
             raise ValueError("Formato de exportação inválido. Use 'json' ou 'archidekt'.")
+
+    def _export_as_archidekt(self):
+        path = f'{self._base_path}/archidekt.txt'
+        print("\n📤 Exportando como Archidekt...")
+        cards_dict = [card.to_deck_archidekt_line() + '\n' for card in self.cards]
+        with open(path, 'w', encoding='utf-8') as txt_file:
+            for card in cards_dict:
+                txt_file.writelines(card)
+        print(f"📤 Exportado _> {path}")
+
+
+    def _export_as_json(self, default_serializer, full):
+        path = f"{self._base_path}/deck_list.json"
+        print("\n📤 Exportando como JSON...")
+        cards_dict = [card.export_as_dict(full) for card in self.cards]
+        with open(path, 'w', encoding='utf-8') as json_file:
+            json.dump(cards_dict, json_file, default=default_serializer, indent=4, ensure_ascii=False)
+        print(f"📤 Exportado _> {path}")
+
 
     @staticmethod
     def parse_card_line(line: str) -> Card:
         pattern = re.compile(
-            r'(?P<quantity>\d+)x?\s+(?P<name>[^(^\[]+)'
-            r'(?:\((?P<collection>[^)]+)\))?'
-            r'(?:\s\d+|\s\*F\*)?'
-            r'(?:\s?\[(?P<category>[^]]+)])?'
-            r'(?:\s?\^(?P<color_tag>[^\^]+)\^)?'
+            r'(?P<quantity>\d+)x?\s+'  # Quantidade
+            r'(?P<name>.+?)\s+'  # Nome da carta (lazy)
+            r'\((?P<collection>[^\)]+)\)\s+'  # Coletânea entre parênteses
+            r'(?P<collector_number>\S+)\s+'  # Número da carta (pode ser 202 ou JOU-65 etc)
+            r'\[(?P<category>[^\]]+)\]\s+'  # Categoria entre colchetes
+            r'\^(?P<color_tag>[^\^]+)\^'  # Tag de cor entre ^ ^
         )
+
         match = pattern.match(line.strip())
         if match:
             card_json = match.groupdict()
-            return Card().from_dict(card_json)
-
+            return Card.from_dict(card_json)
         else:
             raise ValueError(f"Formato da linha não reconhecido: {line}")
 
@@ -87,7 +101,7 @@ class Deck:
     def get_primary_name(card_name: str) -> str:
         return card_name.split('//')[0].strip()
 
-    def print_deck_list(self):
+    def print(self):
         if not self.scryfall_fetched:
             print("Deck List:")
             for card in self.cards:

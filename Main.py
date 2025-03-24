@@ -2,6 +2,7 @@ from Entities.Deck import Deck
 from Entities.enums.EExportFormat import EExportFormat
 from Services.DeckService import DeckService
 
+# 🏪 Alias para nome de lojas
 LIGA = 'liga'
 VILA = 'vila'
 MANA_FIX = 'mana_fix'
@@ -14,13 +15,34 @@ OTHER = 'other'
 
 if __name__ == "__main__":
     deck_service = DeckService()
-    main_deck_path = 'Files/main_deck.txt'  # Substitua pelo caminho correto do seu arquivo
-    main_deck = Deck(main_deck_path)
 
-    deck_service.fetch_scryfall_data(main_deck)
+    # 📥 Carrega o primeiro deck a partir do arquivo
+    first_deck_path = 'Files/first_deck.txt'
+    first_deck = Deck(first_deck_path)
 
-    main_deck.print_deck_list()
+    # 📥 Carrega o segundo deck com categorias que queremos sincronizar
+    second_deck_path = 'Files/second_deck.txt'
+    second_deck = Deck(second_deck_path)
 
-    main_deck.export(format=EExportFormat.JSON, full=False)
-    main_deck.export(format=EExportFormat.ARCHIDEKT, full=False)
+    # 🔄 Atualiza categorias do deck 1 com base no deck 2
+    deck_service.update_deck_category_from_deck(deck=first_deck, other_deck=second_deck)
 
+    # 🔄 Atualiza color_tags do deck 1 com base no deck 2
+    deck_service.update_color_tag_from_deck(deck=first_deck, other_deck=second_deck)
+
+    # 🔎 Busca informações das cartas via API do Scryfall
+    deck_service.fetch_scryfall_data(first_deck)
+
+    # 🖨️ Imprime o deck no terminal
+    first_deck.print()
+
+    # 💾 Exporta o deck como JSON simplificado
+    # Arquivo exportado no path: Files/deck_list.json
+    first_deck.export(format=EExportFormat.JSON, full=False)
+
+    # 💾 Exporta o deck no formato Archidekt
+    # Arquivo exportado no path: Files/archidekt.txt
+    first_deck.export(format=EExportFormat.ARCHIDEKT, full=False)
+
+    # 🌐 (Opcional) Abre abas do navegador com as cartas em uma loja
+    # deck_service.buy_cards(deck_=first_deck, store=VILA)

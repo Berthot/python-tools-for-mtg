@@ -1,0 +1,6 @@
+1x Phyrexian Tower (mh3) [Land] ^Have,#37d67a^
+1x Yahenni, Undying Partisan (tdc) [Sacrifice Outlets] ^Have,#37d67a^
+1x Dictate of Erebos (plst) [Payoffs/Anthems] ^Have,#37d67a^
+1x Black Market Connections (acr) [Card Draw] ^OLHA_EU_MUDEI,#37d67a^
+1x Elenda, the Dusk Rose (lcc) [OLHA_EU_MUDEI] ^Have,#37d67a^
+1x Athreos, God of Passage (plst) [Recursion] ^Don't Have,#f47373^

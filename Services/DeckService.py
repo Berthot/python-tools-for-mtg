@@ -15,15 +15,36 @@ class DeckService:
         self.client = ScryfallClient()
         self.liga_service = LigaService()
 
-    @staticmethod
-    def update_color_tag_from_deck(deck: Deck, other_deck: Deck):
+
+    def update_deck_category_from_deck(self, deck: Deck, other_deck: Deck):
+        """
+        Atualiza as deck_category das cartas do deck com base nas deck_category do other_deck.
+        """
+        deck_category_map = {
+            self.normalize(card.name): card.deck_category
+            for card in other_deck.cards
+            if card.deck_category
+        }
+
+        for card in deck.cards:
+            key = self.normalize(card.name)
+            if key in deck_category_map:
+                card.deck_category = deck_category_map[key]
+
+    def update_color_tag_from_deck(self, deck: Deck, other_deck: Deck):
         """
         Atualiza as tags de cor das cartas do deck com base nas tags de cor do other_deck.
         """
-        color_tag_map = {card.name: card.color_tag for card in other_deck.cards if card.color_tag}
+        deck_color_tag = {
+            self.normalize(card.name): card.color_tag
+            for card in other_deck.cards
+            if card.color_tag
+        }
+
         for card in deck.cards:
-            if card.name in color_tag_map:
-                card.color_tag = color_tag_map[card.name]
+            key = self.normalize(card.name)
+            if key in deck_color_tag:
+                card.color_tag = deck_color_tag[key]
 
     def fetch_scryfall_data(self, deck_: Deck):
         """Busca os dados das cartas do deck no Scryfall e atualiza as cartas com os dados obtidos."""
@@ -69,8 +90,10 @@ class DeckService:
 
         return json.loads(json.dumps(card_dict, default=default_serializer))
 
+    @staticmethod
+    def normalize(name: str) -> str:
+        return name.split("//")[0].strip().lower()
 
-#
 # # Criando uma instância do DeckService
 # deck_service = DeckService()
 #
