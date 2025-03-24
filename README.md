@@ -1,10 +1,12 @@
 # 🐍 Python Tools for 🧙‍♂️ Magic Players
 
-> Um conjunto de ferramentas escritas em Python para jogadores de Magic: The Gathering 🎴, com foco em leitura de decks exportados do [Archidekt](https://www.archidekt.com/) 📥 e integração com a API do [Scryfall](https://scryfall.com/) 🔍.
+> Um conjunto de ferramentas escritas em Python para jogadores de Magic: The Gathering 🎴, com foco em leitura de decks
+> exportados do [Archidekt](https://www.archidekt.com/) 📥 e integração com a API do [Scryfall](https://scryfall.com/) 🔍.
 
 ## Visão Geral ✨
 
-Este projeto tem como objetivo facilitar a manipulação e análise de decks de Magic: The Gathering de forma simples, rápida e extensível. Com ele, você pode:
+Este projeto tem como objetivo facilitar a manipulação e análise de decks de Magic: The Gathering de forma simples,
+rápida e extensível. Com ele, você pode:
 
 - 📄 Carregar decks exportados do Archidekt (em formato texto)
 - 🔍 Buscar informações detalhadas das cartas usando a API do Scryfall
@@ -21,7 +23,6 @@ Ideal para jogadores de Commander, colecionadores e desenvolvedores que curtem M
 - ✅ Geração de arquivos JSON a partir de decks
 - ✅ Abertura de links de compra diretamente no navegador — basta informar a URL da loja ou usar um nome pré-definido.
 
-
 ## Como usar
 
 ### 1. Instalação
@@ -34,7 +35,45 @@ source venv/bin/activate  # ou venv\Scripts\activate no Windows
 pip install -r requirements.txt  # se aplicável
 ```
 
-### 2. Estrutura dos arquivos
+### 2. Exemplo de uso básico
+
+```python
+    deck_service = DeckService()
+liga_service = LigaService()
+
+# 📥 Carrega o primeiro deck a partir do arquivo
+first_deck_path = 'Files/first_deck.txt'
+first_deck = Deck(first_deck_path)
+
+# 📥 Carrega o segundo deck com categorias que queremos sincronizar
+second_deck_path = 'Files/second_deck.txt'
+second_deck = Deck(second_deck_path)
+
+# 🔄 Atualiza categorias do deck 1 com base no deck 2
+deck_service.update_deck_category_from_deck(deck=first_deck, other_deck=second_deck)
+
+# 🔄 Atualiza color_tags do deck 1 com base no deck 2
+deck_service.update_color_tag_from_deck(deck=first_deck, other_deck=second_deck)
+
+# 🔎 Busca informações das cartas via API do Scryfall
+deck_service.fetch_scryfall_data(first_deck)
+
+# 🖨️ Imprime o deck no terminal
+first_deck.print()
+
+# 💾 Exporta o deck como JSON simplificado
+# Arquivo exportado no path: Files/deck_list.json
+first_deck.export(format=EExportFormat.JSON, full=False)
+
+# 💾 Exporta o deck no formato Archidekt
+# Arquivo exportado no path: Files/archidekt.txt
+first_deck.export(format=EExportFormat.ARCHIDEKT, full=False)
+
+# 🌐 (Opcional) Abre abas do navegador com as cartas numa loja
+liga_service.buy_cards(deck=first_deck, store=VILA)
+```
+
+### 3. Estrutura dos arquivos
 
 - `Deck.py`: classe principal para carregar e manipular decks
 - `Card.py`: representa uma carta individual
@@ -42,29 +81,6 @@ pip install -r requirements.txt  # se aplicável
 - `ScryfallRepository.py`: repositório local de cartas salvas
 - `DeckService.py`: orquestra o carregamento de dados e interações
 - `LigaService.py`: gera URLs para lojas
-
-### 3. Exemplo de uso básico
-
-```python
-from Services.DeckService import DeckService
-from Entities.Deck import Deck
-
-# Carrega deck exportado do Archidekt
-deck = Deck("./meu_deck.txt")
-
-# Instancia o serviço e busca os dados
-service = DeckService()
-service.fetch_scryfall_data(deck)
-
-# Exibe as cartas com dados completos
-deck.print_deck_list()
-
-# Salva como JSON
-service.save_deck_in_json(deck)
-
-# Abrir links para compra (opcional)
-service.buy_cards(deck, store='vila')
-```
 
 ## Formato aceito (exportado do Archidekt)
 
@@ -79,13 +95,13 @@ service.buy_cards(deck, store='vila')
 
 ```json
 {
-    "quantity": 1,
-    "name": "Phyrexian Tower",
-    "deck_category": "Land",
-    "mana_cost": "",
-    "cmc": 0,
-    "card_type": "Legendary Land",
-    "card_description": "{T}: Add {C}.\n{T}, Sacrifice a creature: Add {B}{B}."
+  "quantity": 1,
+  "name": "Phyrexian Tower",
+  "deck_category": "Land",
+  "mana_cost": "",
+  "cmc": 0,
+  "card_type": "Legendary Land",
+  "card_description": "{T}: Add {C}.\n{T}, Sacrifice a creature: Add {B}{B}."
 }
 ```
 
@@ -98,8 +114,8 @@ service.buy_cards(deck, store='vila')
 
 - Python 3.9+
 - Bibliotecas:
-  - `requests`
-  - `msgpack`
+    - `requests`
+    - `msgpack`
 
 ## Status
 
