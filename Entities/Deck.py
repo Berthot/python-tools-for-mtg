@@ -82,12 +82,12 @@ class Deck:
     @staticmethod
     def parse_card_line(line: str) -> Card:
         pattern = re.compile(
-            r'(?P<quantity>\d+)x?\s+'  # Quantidade
-            r'(?P<name>.+?)\s+'  # Nome da carta (lazy)
-            r'\((?P<collection>[^\)]+)\)\s+'  # Coletânea entre parênteses
-            r'(?P<collector_number>\S+)\s+'  # Número da carta (pode ser 202 ou JOU-65 etc)
-            r'\[(?P<category>[^\]]+)\]\s+'  # Categoria entre colchetes
-            r'\^(?P<color_tag>[^\^]+)\^'  # Tag de cor entre ^ ^
+            r'(?P<quantity>\d+)x?\s+'  # Quantidade (obrigatório)
+            r'(?P<name>.+?)'  # Nome da carta (lazy, obrigatório)
+            r'(?:\s+\((?P<collection>[^\)]+)\))?'  # Coletânea entre parênteses (opcional)
+            r'(?:\s+(?P<collector_number>\S+))?'  # Número da carta (opcional)
+            r'(?:\s+\[(?P<category>[^\]]+)\])?'  # Categoria entre colchetes (opcional)
+            r'(?:\s+\^(?P<color_tag>[^\^]+)\^)?$'  # Tag de cor entre ^ ^ (opcional)
         )
 
         match = pattern.match(line.strip())

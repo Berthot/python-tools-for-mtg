@@ -14,6 +14,8 @@ MERURU = 'meruru'
 BLOOD = 'blood'
 OTHER = 'other'
 
+SELECTED = TAVERNA
+
 if __name__ == "__main__":
     deck_service = DeckService()
     liga_service = LigaService()
@@ -47,4 +49,4 @@ if __name__ == "__main__":
     first_deck.export(format=EExportFormat.ARCHIDEKT, full=False)
 
     # 🌐 (Opcional) Abre abas do navegador com as cartas numa loja
-    liga_service.buy_cards(deck=first_deck, store=VILA)
+    liga_service.buy_cards(deck=first_deck, store=SELECTED)
