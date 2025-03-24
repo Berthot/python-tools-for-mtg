@@ -1,5 +1,4 @@
 import json
-import webbrowser
 from dataclasses import asdict
 
 from Clients.ScryfallClient import ScryfallClient
@@ -15,7 +14,8 @@ class DeckService:
         self.client = ScryfallClient()
         self.liga_service = LigaService()
 
-    def update_color_tag_from_deck(self, deck: Deck, other_deck: Deck):
+    @staticmethod
+    def update_color_tag_from_deck(deck: Deck, other_deck: Deck):
         """
         Atualiza as tags de cor das cartas do deck com base nas tags de cor do other_deck.
         """
@@ -60,7 +60,8 @@ class DeckService:
         with open(file_path, 'w', encoding='utf-8') as json_file:
             json.dump(cards_dict, json_file, ensure_ascii=False, indent=4)
 
-    def _card_to_dict(self, card: Card) -> dict:
+    @staticmethod
+    def _card_to_dict(card: Card) -> dict:
         card_dict = asdict(card)
         if card.scryfall:
             card_dict['scryfall'] = asdict(card.scryfall)
