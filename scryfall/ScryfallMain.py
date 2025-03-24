@@ -43,7 +43,6 @@ def save_cards_to_json(input_file: str, output_file: str):
                 card = FullScryfallCard(card_name, card_my_category)
                 card.set_quantity(quantity)
                 card_data = card.to_dict()
-                print(card_data)  # Exibe os dados no console (opcional)
                 cards.append(card_data)
             except:
                 print(card_name + ' error searching')

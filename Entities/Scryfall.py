@@ -1,11 +1,11 @@
 from dataclasses import dataclass, field
 from typing import Optional, List, Dict
 
+
 @dataclass
-class ScryfallCard:
-    deck_category: Optional[str] = None
-    quantity: Optional[int] = None
+class Scryfall:
     name: Optional[str] = None
+    quantity: Optional[int] = None
     mana_cost: Optional[str] = None
     cmc: Optional[float] = None
     type_line: Optional[str] = None
@@ -73,16 +73,26 @@ class ScryfallCard:
     related_uris: Dict[str, str] = field(default_factory=dict)
     purchase_uris: Dict[str, str] = field(default_factory=dict)
 
-    def from_scryfall_data(self, data: Dict):
-        """Preenche apenas os campos originais."""
-        self.mana_cost = data.get("mana_cost")
-        self.cmc = data.get("cmc")
-        self.type_line = data.get("type_line")
-        self.oracle_text = data.get("oracle_text")
-        self.card_faces = data.get("card_faces")
+    @classmethod
+    def from_name(cls, name: str):
+        """ Preenche apenas o campo nome. """
+        scryfall = cls()
+        scryfall.name = name
+        return scryfall
 
-    def fill_all_fields_from_scryfall_data(self, data: Dict):
+    @classmethod
+    def from_json(cls, json: Dict):
+        """ Preenche todos os campos da classe com base nos dados da API. """
+        scryfall = cls()
+        scryfall.advanced_scryfall_data(json)
+        return scryfall
+
+    def __str__(self):
+        return f"scryfall.name: {self.name}"
+
+    def advanced_scryfall_data(self, data: Dict):
         """Preenche todos os campos da classe com base nos dados da API."""
+        self.name = data.get("name")
         self.object = data.get("object")
         self.id = data.get("id")
         self.oracle_id = data.get("oracle_id")

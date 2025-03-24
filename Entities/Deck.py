@@ -2,9 +2,7 @@ import re
 from dataclasses import dataclass, field
 from typing import Optional, List
 
-from CardsManipulators.models.Card import Card
-from CardsManipulators.models.ScryfallCard import ScryfallCard
-from CardsManipulators.models.ScryfallClient import ScryfallClient
+from Entities.Card import Card
 
 
 @dataclass
@@ -21,11 +19,7 @@ class Deck:
     def add_card(self, card: Card):
         self.cards.append(card)
 
-    def update_color_tag_from_deck(self, other_deck: 'Deck'):
-        color_tag_map = {card.name: card.color_tag for card in other_deck.cards if card.color_tag}
-        for card in self.cards:
-            if card.name in color_tag_map:
-                card.color_tag = color_tag_map[card.name]
+
 
     def load_from_file(self, file_path: str):
         with open(file_path, 'r', encoding='utf-8') as file:
@@ -38,24 +32,8 @@ class Deck:
         if not self.scryfall_fetched:
             return []
         if not self.not_found_cards:
-            self.not_found_cards = [card for card in self.cards if not card.found_in_scryfall]
+            self.not_found_cards = [card for card in self.cards if not card.has_scryfall]
         return self.not_found_cards
-
-    def fetch_all_scryfall_data(self):
-        client = ScryfallClient()
-        primary_names = [card.get_primary_name() for card in self.cards]
-        scryfall_data = client.fetch_cards_by_names(primary_names)
-
-        for card in self.cards:
-            card_data = scryfall_data.get(card.name)
-            if card_data:
-                scryfall_card = ScryfallCard(deck_category=card.category, name=card.name)
-                scryfall_card.fill_all_fields_from_scryfall_data(card_data)
-                card.scryfall_card = scryfall_card
-                card.found_in_scryfall = True
-            else:
-                card.found_in_scryfall = False
-        self.scryfall_fetched = True
 
     @staticmethod
     def parse_card_line(line: str) -> Card:
@@ -68,14 +46,9 @@ class Deck:
         )
         match = pattern.match(line.strip())
         if match:
-            card_info = match.groupdict()
-            return Card(
-                name=card_info['name'].strip(),
-                collection=card_info.get('collection'),
-                quantity=int(card_info['quantity']) if card_info.get('quantity') else None,
-                category=card_info.get('category'),
-                color_tag=card_info.get('color_tag')
-            )
+            card_json = match.groupdict()
+            return Card().from_dict(card_json)
+
         else:
             raise ValueError(f"Formato da linha não reconhecido: {line}")
 
@@ -90,8 +63,8 @@ class Deck:
                 print(card)
             return
 
-        found_cards = [card for card in self.cards if card.found_in_scryfall]
-        not_found_cards = [card for card in self.cards if not card.found_in_scryfall]
+        found_cards = [card for card in self.cards if card.has_scryfall]
+        not_found_cards = [card for card in self.cards if not card.has_scryfall]
 
         if found_cards:
             print("Deck List:")
