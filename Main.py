@@ -1,6 +1,7 @@
 from Entities.Deck import Deck
 from Entities.enums.EExportFormat import EExportFormat
 from Services.DeckService import DeckService
+from Services.LigaService import LigaService
 
 # 🏪 Alias para nome de lojas
 LIGA = 'liga'
@@ -15,6 +16,7 @@ OTHER = 'other'
 
 if __name__ == "__main__":
     deck_service = DeckService()
+    liga_service = LigaService()
 
     # 📥 Carrega o primeiro deck a partir do arquivo
     first_deck_path = 'Files/first_deck.txt'
@@ -44,5 +46,5 @@ if __name__ == "__main__":
     # Arquivo exportado no path: Files/archidekt.txt
     first_deck.export(format=EExportFormat.ARCHIDEKT, full=False)
 
-    # 🌐 (Opcional) Abre abas do navegador com as cartas em uma loja
-    # deck_service.buy_cards(deck_=first_deck, store=VILA)
+    # 🌐 (Opcional) Abre abas do navegador com as cartas numa loja
+    # liga_service.buy_cards(deck=first_deck, store=VILA)

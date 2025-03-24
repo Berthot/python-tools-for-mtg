@@ -6,14 +6,11 @@ from Clients.ScryfallClient import ScryfallClient
 from Entities.Card import Card
 from Entities.Deck import Deck
 from Repositories.ScryfallRepository import ScryfallRepository
-from Services.LigaService import LigaService
-
 
 class DeckService:
     def __init__(self):
         self.repository = ScryfallRepository()
         self.client = ScryfallClient()
-        self.liga_service = LigaService()
 
 
     def update_deck_category_from_deck(self, deck: Deck, other_deck: Deck):
@@ -70,12 +67,6 @@ class DeckService:
                 self.repository.save_changes()
             except Exception as e:
                 print(f"Erro ao buscar dados do Scryfall: {e}")
-
-    def buy_cards(self, deck_: Deck, store: str = 'vila'):
-        var = input(f'digite sim para procurar na {store}: ')
-        if var != 's':
-            return
-        self.liga_service.buy_cards(deck=deck_, store=store)
 
     @staticmethod
     def _card_to_dict(card: Card) -> dict:
