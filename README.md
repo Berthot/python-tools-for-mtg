@@ -46,7 +46,7 @@ first_deck_path = 'Files/first_deck.txt'
 first_deck = Deck(first_deck_path)
 
 # 📥 Carrega o segundo deck com categorias que queremos sincronizar
-second_deck_path = 'Files/second_deck.txt'
+second_deck_path = 'Files/other_deck_list.txt'
 second_deck = Deck(second_deck_path)
 
 # 🔄 Atualiza categorias do deck 1 com base no deck 2

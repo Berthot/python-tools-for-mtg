@@ -1,7 +1,10 @@
 import json
+import re
 import uuid
 from dataclasses import field, dataclass, asdict
 from typing import Optional, Dict
+
+import unicodedata
 
 from Entities.Scryfall import Scryfall
 
@@ -50,6 +53,29 @@ class Card:
             parts.append(f"^{self.color_tag}^")
 
         return ' '.join(parts)
+
+    def normalize_filename(self) -> str:
+        """
+        Normaliza o nome do commander para usar como nome de arquivo:
+        - Remove acentos e caracteres especiais
+        - Substitui espaços por underscores
+        - Remove caracteres não alfanuméricos
+        - Converte para lowercase
+        """
+        # Remove acentos
+        name = unicodedata.normalize('NFKD', self.name).encode('ASCII', 'ignore').decode('ASCII')
+
+        # Substitui espaços por underscore
+        name = name.replace(' ', '_')
+
+        # Remove caracteres não alfanuméricos (exceto underscore)
+        name = re.sub(r'[^\w_]', '', name)
+
+        # Converte para lowercase
+        name = name.lower()
+
+        return name
+
 
     def export_as_dict(self, full:bool = False):
         if full:

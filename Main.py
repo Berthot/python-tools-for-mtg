@@ -1,3 +1,6 @@
+from pygments.lexer import default
+
+from Configurations.EnvManager import EnvManager
 from Entities.Deck import Deck
 from Entities.enums.EExportFormat import EExportFormat
 from Services.DeckService import DeckService
@@ -19,14 +22,12 @@ SELECTED = TAVERNA
 if __name__ == "__main__":
     deck_service = DeckService()
     liga_service = LigaService()
-
     # 📥 Carrega o primeiro deck a partir do arquivo
-    first_deck_path = 'Files/archidekt.txt'
-    first_deck = Deck(first_deck_path)
+    first_deck = Deck(file_name='archidekt', generic_name=True)
 
     # 📥 Carrega o segundo deck com categorias que queremos sincronizar
-    # second_deck_path = 'Files/second_deck.txt'
-    # second_deck = Deck(second_deck_path)
+    # second_deck_path = 'Files/other_deck_list.txt'
+    # second_deck = Deck(base_path='Files/other_deck_list.txt')
 
     # 🔄 Atualiza categorias do deck 1 com base no deck 2
     # deck_service.update_deck_category_from_deck(deck=first_deck, other_deck=second_deck)
@@ -42,7 +43,8 @@ if __name__ == "__main__":
 
     # 💾 Exporta o deck como JSON simplificado
     # Arquivo exportado no path: Files/deck_list.json
-    first_deck.export(format=EExportFormat.JSON, full=False)
+    first_deck.export(export_format=EExportFormat.JSON, full=False, internal_export=True)
+    first_deck.export(export_format=EExportFormat.ARCHIDEKT, full=False, internal_export=True)
 
     # 💾 Exporta o deck no formato Archidekt
     # Arquivo exportado no path: Files/archidekt.txt

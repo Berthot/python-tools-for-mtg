@@ -4,6 +4,7 @@ from dataclasses import dataclass, field
 from typing import Optional, List
 from uuid import UUID
 
+from Configurations.EnvManager import EnvManager
 from Entities.Card import Card
 from Entities.enums.EExportFormat import EExportFormat
 
@@ -12,18 +13,28 @@ from Entities.enums.EExportFormat import EExportFormat
 class Deck:
     cards: List[Card] = field(default_factory=list)
     scryfall_fetched: bool = False
-    _base_path: str = 'Files'
-    def __init__(self, file_path: Optional[str] = None):
+    _export_base_path: str = 'Files'
+
+    def __init__(self, base_path: Optional[str] = None, file_name: Optional[str] = None, generic_name: bool = False):
+        self._generic_name = generic_name
+        env_manager = EnvManager()
+        env_default_export_base_path = env_manager.get_env(env_name='DEFAULT_EXPORT_BASE_PATH')
+        env_default_export_file_name = env_manager.get_env(env_name='DEFAULT_EXPORT_FILE_NAME')
+        env_default_import_file_name = env_manager.get_env(env_name='DEFAULT_IMPORT_FILE_NAME')
         self.cards = []
         self.not_found_cards = []
-        if file_path:
-            self.load_from_file(file_path)
+        self._export_base_path = str(env_default_export_base_path) if base_path is None else base_path
+        self._export_default_file_name = str(env_default_export_file_name)
+        self._import_file_name = str(env_default_import_file_name) if file_name is None else file_name
+
+        if file_name:
+            self.load_from_file()
 
     def add_card(self, card: Card):
         self.cards.append(card)
 
-    def load_from_file(self, file_path: str):
-        with open(file_path, 'r', encoding='utf-8') as file:
+    def load_from_file(self):
+        with open(f'./Files/{self._import_file_name}.txt', 'r', encoding='utf-8') as file:
             for line in file:
                 if line.strip() == '':
                     continue
@@ -38,7 +49,7 @@ class Deck:
             self.not_found_cards = [card for card in self.cards if not card.has_scryfall]
         return self.not_found_cards
 
-    def export(self, format: EExportFormat = EExportFormat.JSON, full: bool = False) -> str:
+    def export(self, export_format: EExportFormat = EExportFormat.JSON, full: bool = False, internal_export=False) -> str:
         """
         Exporta o deck como JSON ou como texto (formato Archidekt-like).
 
@@ -48,6 +59,9 @@ class Deck:
 
         Returns:
             str: Representação exportada do deck
+            :param internal_export:
+            :param full:
+            :param export_format:
         """
 
         def default_serializer(obj):
@@ -55,15 +69,35 @@ class Deck:
                 return str(obj)
             raise TypeError(f"Type {type(obj)} not serializable")
 
-        if format == EExportFormat.JSON:
-            self._export_as_json(default_serializer, full)
-        elif format == EExportFormat.ARCHIDEKT:
-            self._export_as_archidekt()
+        if export_format == EExportFormat.JSON:
+            self._export_as_json(default_serializer, full, internal_export=internal_export)
+        elif export_format == EExportFormat.ARCHIDEKT:
+            self._export_as_archidekt(internal_export=internal_export)
         else:
             raise ValueError("Formato de exportação inválido. Use 'json' ou 'archidekt'.")
 
-    def _export_as_archidekt(self):
-        path = f'{self._base_path}/archidekt.txt'
+    def file_name_or_default(self):
+        if self._generic_name:
+            return self._export_default_file_name
+        return self._export_default_file_name if self.find_commander() is None else self.find_commander()
+
+    def find_commander(self):
+        for card in self.cards:
+            if card.deck_category:
+                # Se for string, verifica se contém 'Commander'
+                if isinstance(card.deck_category, str) and 'Commander' in card.deck_category:
+                    return card.normalize_filename()
+                # Se for lista, verifica se algum item contém 'Commander'
+                elif isinstance(card.deck_category, list) and any(
+                        'Commander' in category for category in card.deck_category):
+                    return card.normalize_filename()
+        return None
+
+    def _export_as_archidekt(self, internal_export=False):
+        file_name = self.file_name_or_default()
+        path = f'{self._export_base_path}/{file_name}.txt'
+        if internal_export:
+            path = f'Files/{file_name}.txt'
         print("\n📤 Exportando como Archidekt...")
         cards_dict = [card.to_deck_archidekt_line() + '\n' for card in self.cards]
         with open(path, 'w', encoding='utf-8') as txt_file:
@@ -71,9 +105,11 @@ class Deck:
                 txt_file.writelines(card)
         print(f"📤 Exportado _> {path}")
 
-
-    def _export_as_json(self, default_serializer, full):
-        path = f"{self._base_path}/deck_list.json"
+    def _export_as_json(self, default_serializer, full, internal_export=False):
+        file_name = self.file_name_or_default()
+        path = f"{self._export_base_path}/{file_name}.json"
+        if internal_export:
+            path = f'Files/{file_name}.json'
         print("\n📤 Exportando como JSON...")
         cards_dict = [card.export_as_dict(full) for card in self.cards]
         with open(path, 'w', encoding='utf-8') as json_file:
@@ -105,7 +141,7 @@ class Deck:
         deck_category = None
         if '[' in remaining:
             remaining, category_part = remaining.rsplit('[', 1)
-            category_match = re.search(r'\[([^\]]+)\]$', '[' + category_part)
+            category_match = re.search(r'\[([^]]+)]$', '[' + category_part)
             if category_match:
                 # Split por vírgula e remover espaços em branco
                 categories = [cat.strip() for cat in category_match.group(1).split(',')]
