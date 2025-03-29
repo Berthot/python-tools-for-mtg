@@ -7,10 +7,11 @@ class Scryfall:
     name: Optional[str] = None
     quantity: Optional[int] = None
     mana_cost: Optional[str] = None
-    cmc: Optional[float] = None
+    cmc: Optional[str] = None
     type_line: Optional[str] = None
     oracle_text: Optional[str] = None
     card_faces: Optional[List[Dict]] = None
+    layout: Optional[str] = None
     object: Optional[str] = None
     id: Optional[str] = None
     oracle_id: Optional[str] = None
@@ -22,7 +23,6 @@ class Scryfall:
     released_at: Optional[str] = None
     uri: Optional[str] = None
     scryfall_uri: Optional[str] = None
-    layout: Optional[str] = None
     highres_image: bool = False
     image_status: Optional[str] = None
     image_uris: Dict[str, str] = field(default_factory=dict)
@@ -80,7 +80,7 @@ class Scryfall:
     def from_name(cls, name: str):
         """ Preenche apenas o campo nome. """
         scryfall = cls()
-        scryfall.name = name
+        scryfall.name = name.lower()
         return scryfall
 
     @classmethod
@@ -90,11 +90,18 @@ class Scryfall:
         scryfall.advanced_scryfall_data(json)
         return scryfall
 
-    def advanced_scryfall_data(self, data: Dict):
+    def get_primary_name(self) -> str:
+        if "//" not in self.name.lower():
+            return self.name.lower()
+        return self.name.split('//')[0].strip().lower()
+
+    def advanced_scryfall_data(self, data):
         """Preenche todos os campos da classe com base nos dados da API."""
-        self.name = data.get("name")
+        self.name = data.get("name").lower()
         self.object = data.get("object")
         self.id = data.get("id")
+        self.layout = data.get("layout")
+        self.card_faces = data.get("card_faces")
         self.oracle_id = data.get("oracle_id")
         self.multiverse_ids = data.get("multiverse_ids", [])
         self.mtgo_id = data.get("mtgo_id")
@@ -104,7 +111,6 @@ class Scryfall:
         self.released_at = data.get("released_at")
         self.uri = data.get("uri")
         self.scryfall_uri = data.get("scryfall_uri")
-        self.layout = data.get("layout")
         self.highres_image = data.get("highres_image", False)
         self.image_status = data.get("image_status")
         self.image_uris = data.get("image_uris", {})
@@ -122,12 +128,12 @@ class Scryfall:
         self.games = data.get("games", [])
         self.reserved = data.get("reserved", False)
         self.foil = data.get("foil", False)
-        self.nonfoil = data.get("nonfoil", False)
+        # self.nonfoil = data.get("nonfoil", False)
         self.finishes = data.get("finishes", [])
-        self.oversized = data.get("oversized", False)
-        self.promo = data.get("promo", False)
-        self.reprint = data.get("reprint", False)
-        self.variation = data.get("variation", False)
+        # self.oversized = data.get("oversized", False)
+        # self.promo = data.get("promo", False)
+        self.reprint = data.get("reprint")
+        self.variation = data.get("variation")
         self.set_id = data.get("set_id")
         self.set = data.get("set")
         self.set_name = data.get("set_name")
@@ -138,7 +144,7 @@ class Scryfall:
         self.rulings_uri = data.get("rulings_uri")
         self.prints_search_uri = data.get("prints_search_uri")
         self.collector_number = data.get("collector_number")
-        self.digital = data.get("digital", False)
+        # self.digital = data.get("digital", False)
         self.rarity = data.get("rarity")
         self.watermark = data.get("watermark")
         self.card_back_id = data.get("card_back_id")
@@ -147,15 +153,13 @@ class Scryfall:
         self.illustration_id = data.get("illustration_id")
         self.border_color = data.get("border_color")
         self.frame = data.get("frame")
-        self.frame_effects = data.get("frame_effects", [])
         self.security_stamp = data.get("security_stamp")
-        self.full_art = data.get("full_art", False)
-        self.textless = data.get("textless", False)
-        self.booster = data.get("booster", False)
-        self.story_spotlight = data.get("story_spotlight", False)
+        # self.full_art = data.get("full_art", False)
+        # self.textless = data.get("textless", False)
+        # self.booster = data.get("booster", False)
+        # self.story_spotlight = data.get("story_spotlight", False)
         self.edhrec_rank = data.get("edhrec_rank")
         self.preview = data.get("preview", {})
         self.prices = data.get("prices", {})
-        self.related_uris = data.get("related_uris", {})
-        self.purchase_uris = data.get("purchase_uris", {})
-        self.card_faces = data.get("card_faces")
+        # self.related_uris = data.get("related_uris", {})
+        # self.purchase_uris = data.get("purchase_uris", {})

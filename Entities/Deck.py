@@ -25,6 +25,8 @@ class Deck:
     def load_from_file(self, file_path: str):
         with open(file_path, 'r', encoding='utf-8') as file:
             for line in file:
+                if line.strip() == '':
+                    continue
                 if line.strip():
                     card = self.parse_card_line(line)
                     self.add_card(card)
@@ -78,27 +80,67 @@ class Deck:
             json.dump(cards_dict, json_file, default=default_serializer, indent=4, ensure_ascii=False)
         print(f"📤 Exportado _> {path}")
 
-
     @staticmethod
-    def parse_card_line(line: str) -> Card:
-        pattern = re.compile(
-            r'(?P<quantity>\d+)x?\s+'  # Quantidade (obrigatório)
-            r'(?P<name>.+?)'  # Nome da carta (lazy, obrigatório)
-            r'(?:\s+\((?P<collection>[^\)]+)\))?'  # Coletânea entre parênteses (opcional)
-            r'(?:\s+(?P<collector_number>\S+))?'  # Número da carta (opcional)
-            r'(?:\s+\[(?P<category>[^\]]+)\])?'  # Categoria entre colchetes (opcional)
-            r'(?:\s+\^(?P<color_tag>[^\^]+)\^)?$'  # Tag de cor entre ^ ^ (opcional)
-        )
+    def parse_card_line(line: str) -> 'Card':
+        line = line.strip()
 
-        match = pattern.match(line.strip())
-        if match:
-            card_json = match.groupdict()
-            return Card.from_dict(card_json)
-        else:
-            raise ValueError(f"Formato da linha não reconhecido: {line}")
+        # Extrai quantidade
+        quantity_match = re.match(r'^(\d+)x?\s+', line)
+        if not quantity_match:
+            raise ValueError(f"Invalid quantity in line: {line}")
+
+        quantity = int(quantity_match.group(1))
+        remaining = line[quantity_match.end():]
+
+        # Extrai tag de cor (se existir)
+        color_tag = None
+        if '^' in remaining:
+            remaining, color_part = remaining.rsplit('^', 1)
+            color_tag_match = re.search(r'\^([^^]+)\^$', remaining + '^' + color_part)
+            if color_tag_match:
+                color_tag = color_tag_match.group(1)
+                remaining = remaining.replace(f'^{color_tag}^', '')
+
+        # Extrai categoria (se existir)
+        deck_category = None
+        if '[' in remaining:
+            remaining, category_part = remaining.rsplit('[', 1)
+            category_match = re.search(r'\[([^\]]+)\]$', '[' + category_part)
+            if category_match:
+                deck_category = category_match.group(1)
+                remaining = remaining.replace(f'[{deck_category}]', '')
+
+        # Extrai coleção e número do coletor (se existirem)
+        collection = None
+        collector_number = None
+        if '(' in remaining:
+            collection_match = re.search(r'\(([^)]+)\)', remaining)
+            if collection_match:
+                collection_info = collection_match.group(1).split()
+                collection = collection_info[0]
+                if len(collection_info) > 1:
+                    collector_number = collection_info[1]
+                remaining = remaining.replace(f'({collection_match.group(1)})', '')
+
+        # O que sobrou é o nome da carta
+        name = remaining.strip()
+        if "elves" in name:
+            pass
+        if "Elves" in name:
+            pass
+
+        return Card(
+            name=name,
+            collection=collection,
+            quantity=quantity,
+            deck_category=deck_category,
+            color_tag=color_tag
+        )
 
     @staticmethod
     def get_primary_name(card_name: str) -> str:
+        if "//" not in card_name:
+            return card_name
         return card_name.split('//')[0].strip()
 
     def print(self):

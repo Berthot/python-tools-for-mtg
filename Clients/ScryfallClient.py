@@ -1,5 +1,5 @@
 from typing import List
-
+import time
 import requests
 
 from Entities.Scryfall import Scryfall
@@ -23,9 +23,14 @@ class ScryfallClient:
             for scryfall_card_json in data.get('data', []):
                 scryfall_card_name = scryfall_card_json.get('name')
                 if scryfall_card_name:
-                    card = Scryfall(scryfall_card_name)
-                    card.advanced_scryfall_data(scryfall_card_json)
-                    scryfall_cards.append(card)
+                    try:
+                        # card = Scryfall.from_name(scryfall_card_name)
+                        card = Scryfall.from_json(scryfall_card_json)
+                        scryfall_cards.append(card)
+                    except Exception as e:
+                        print(f"Erro ao buscar dados do Scryfall: ")
+            time.sleep(8)
+            print("esperando 8 segundos para captar do scryfall")
         return scryfall_cards
 
 # # Criando uma instância do ScryfallClient

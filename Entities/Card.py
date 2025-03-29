@@ -14,13 +14,13 @@ class Card:
     quantity: Optional[int] = None
     deck_category: Optional[str] = ""
     color_tag: Optional[str] = None
-    scryfall: Optional[Scryfall] = None
+    scryfall: Scryfall = None
     has_scryfall: bool = scryfall is not None
 
     @classmethod
     def from_name(cls, name: str):
         return Card(
-            name=name.strip(),
+            name=name.strip().lower(),
             collection=None,
             quantity=1,
             color_tag=None
@@ -29,7 +29,7 @@ class Card:
     @classmethod
     def from_dict(cls, json: Dict):
         return Card(
-            name=json['name'].strip(),
+            name=json['name'].strip().lower(),
             collection=json.get('collection'),
             quantity=int(json['quantity']) if json.get('quantity') else None,
             deck_category=json.get('category'),
@@ -57,15 +57,26 @@ class Card:
         return self._to_simple_dict()
 
     def _to_simple_dict(self) -> dict:
-        return {
+        simple_dict = {
             "quantity": self.quantity or 1,
-            "name": self.name,
-            "deck_category": self.deck_category,
+            "name": self.name.lower() if self.name else None,
+            "deck_category": self.deck_category if self.deck_category else None,
             "mana_cost": self.scryfall.mana_cost if self.scryfall else None,
-            "cmc": int(self.scryfall.cmc if self.scryfall else None),
+            "cmc": self.scryfall.cmc if self.scryfall else None,
             "card_type": self.scryfall.type_line if self.scryfall else None,
             "card_description": self.scryfall.oracle_text if self.scryfall else None
         }
+        is_two_faces = self.scryfall.layout in ['transform', 'split'] and hasattr(self.scryfall, 'card_faces')
+
+        if self.has_scryfall is True and is_two_faces:
+            simple_dict["mana_cost"] = f"{self.scryfall.card_faces[0]["mana_cost"]} // {self.scryfall.card_faces[1]["mana_cost"]}"
+            simple_dict["card_type"] = f"{self.scryfall.card_faces[0]["type_line"]} // {self.scryfall.card_faces[1]["type_line"]}"
+            simple_dict[f"card_description"] = {
+                f"{self.name.split(' // ')[0]}": f"{self.scryfall.card_faces[0]["oracle_text"]}",
+                f"{self.name.split(' // ')[1]}": f"{self.scryfall.card_faces[1]["oracle_text"]}",
+            }
+
+        return simple_dict
 
     def _to_full_json(self) -> dict:
         def default_serializer(obj):
@@ -82,7 +93,9 @@ class Card:
         return card_dict
 
     def get_primary_name(self) -> str:
-        return self.name.split('//')[0].strip()
+        if "//" not in self.name.lower():
+            return self.name.lower()
+        return self.name.split('//')[0].strip().lower()
 
     def __str__(self):
         return self.to_deck_archidekt_line()

@@ -1,17 +1,19 @@
 import json
 from dataclasses import asdict
+from typing import Optional, List
 from uuid import UUID
 
 from Clients.ScryfallClient import ScryfallClient
 from Entities.Card import Card
 from Entities.Deck import Deck
+from Entities.Scryfall import Scryfall
 from Repositories.ScryfallRepository import ScryfallRepository
+
 
 class DeckService:
     def __init__(self):
         self.repository = ScryfallRepository()
         self.client = ScryfallClient()
-
 
     def update_deck_category_from_deck(self, deck: Deck, other_deck: Deck):
         """
@@ -48,25 +50,36 @@ class DeckService:
         cards_to_fetch = []
 
         for card_ in deck_.cards:
-            existing_card = self.repository.get_card_by_name(card_.name)
+            existing_card = self.repository.get_card_by_name(card_.name.strip().lower())
             if existing_card:
                 card_.scryfall = existing_card
                 card_.has_scryfall = True
             else:
-                cards_to_fetch.append(card_.name)
+                card_.has_scryfall = True
+                cards_to_fetch.append(card_.get_primary_name())
 
         if cards_to_fetch:
-            try:
-                fetched_cards = self.client.get_cards_by_names(cards_to_fetch)
-                for fetched_card in fetched_cards:
-                    self.repository.add_card(fetched_card)
-                    for card_deck in deck_.cards:
-                        if card_deck.name == fetched_card.name:
-                            card_deck.scryfall = fetched_card
-                            card_deck.has_scryfall = True
-                self.repository.save_changes()
-            except Exception as e:
-                print(f"Erro ao buscar dados do Scryfall: {e}")
+            fetched_cards = self.client.get_cards_by_names(cards_to_fetch)
+            # names = [fetched_card.get_primary_name() for fetched_card in fetched_cards]
+            for card_in_deck in deck_.cards:
+                name = card_in_deck.get_primary_name()
+                scryfall_card = self.get_by_name(fetched_cards, name)
+                if scryfall_card is None:
+                    continue
+                scryfall_name = scryfall_card.get_primary_name()
+                if name == scryfall_name:
+                    self.repository.add_card(scryfall_card)
+                    card_in_deck.scryfall = scryfall_card
+                    card_in_deck.has_scryfall = True
+                if not card_in_deck.has_scryfall:
+                    print(card_in_deck.name + ' :: not founded')
+
+        self.repository.save_changes()
+
+    @classmethod
+    def get_by_name(cls, objects: List[Scryfall], name: str) -> Optional[Scryfall]:
+        matches = list(filter(lambda obj: obj.get_primary_name() == name.lower(), objects))
+        return matches[0] if matches else None
 
     @staticmethod
     def _card_to_dict(card: Card) -> dict:
