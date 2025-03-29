@@ -11,7 +11,7 @@
     {
         "quantity": 1,
         "name": "accursed marauder",
-        "deck_category": "Removals,Maybeboard{noDeck}{noPrice}",
+        "deck_category": "Removals",
         "mana_cost": "{1}{B}",
         "cmc": 2.0,
         "card_type": "Creature — Zombie Warrior",
@@ -19,8 +19,27 @@
     },
     {
         "quantity": 1,
+        "name": "funeral room // awakening hall",
+        "deck_category": [
+            "Bombs",
+            "Death Triggers",
+            "Reanimate"
+        ],
+        "mana_cost": "{2}{B} // {6}{B}{B}",
+        "cmc": 11.0,
+        "card_type": "Enchantment — Room // Enchantment — Room",
+        "card_description": {
+            "Funeral Room": "Whenever a creature you control dies, each opponent loses 1 life and you gain 1 life.\n(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.)",
+            "Awakening Hall": "When you unlock this door, return all creature cards from your graveyard to the battlefield.\n(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.)"
+        }
+    },
+    {
+        "quantity": 1,
         "name": "altar of dementia",
-        "deck_category": "Sac Outlets,Fill Grave",
+        "deck_category": [
+            "Sac Outlets",
+            "Fill Grave"
+        ],
         "mana_cost": "{2}",
         "cmc": 2.0,
         "card_type": "Artifact",
@@ -92,7 +111,10 @@
     {
         "quantity": 1,
         "name": "buried ruin",
-        "deck_category": "Land,Artifact Recursion",
+        "deck_category": [
+            "Land",
+            "Artifact Recursion"
+        ],
         "mana_cost": "",
         "cmc": 0.0,
         "card_type": "Land",
@@ -155,7 +177,10 @@
     {
         "quantity": 1,
         "name": "eerie soultender",
-        "deck_category": "Fill Grave,Reanimate",
+        "deck_category": [
+            "Fill Grave",
+            "Reanimate"
+        ],
         "mana_cost": "{2}{B}",
         "cmc": 3.0,
         "card_type": "Creature — Spirit Cleric",
@@ -200,23 +225,14 @@
     {
         "quantity": 1,
         "name": "final parting",
-        "deck_category": "Grave Tutor,Sorcery",
+        "deck_category": [
+            "Grave Tutor",
+            "Sorcery"
+        ],
         "mana_cost": "{3}{B}{B}",
         "cmc": 5.0,
         "card_type": "Sorcery",
         "card_description": "Search your library for two cards. Put one into your hand and the other into your graveyard. Then shuffle."
-    },
-    {
-        "quantity": 1,
-        "name": "funeral room // awakening hall",
-        "deck_category": "Bombs,Death Triggers,Reanimate",
-        "mana_cost": "{2}{B} // {6}{B}{B}",
-        "cmc": 11.0,
-        "card_type": "Enchantment — Room // Enchantment — Room",
-        "card_description": {
-            "Funeral Room": "Whenever a creature you control dies, each opponent loses 1 life and you gain 1 life.\n(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.)",
-            "Awakening Hall": "When you unlock this door, return all creature cards from your graveyard to the battlefield.\n(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.)"
-        }
     },
     {
         "quantity": 1,
@@ -257,7 +273,10 @@
     {
         "quantity": 1,
         "name": "illusionist's bracers",
-        "deck_category": "Untap Creature,Artifact",
+        "deck_category": [
+            "Untap Creature",
+            "Artifact"
+        ],
         "mana_cost": "{2}",
         "cmc": 2.0,
         "card_type": "Artifact — Equipment",
@@ -365,7 +384,10 @@
     {
         "quantity": 1,
         "name": "palantír of orthanc",
-        "deck_category": "Draw,Fill Grave",
+        "deck_category": [
+            "Draw",
+            "Fill Grave"
+        ],
         "mana_cost": "{3}",
         "cmc": 3.0,
         "card_type": "Legendary Artifact",
@@ -374,7 +396,10 @@
     {
         "quantity": 1,
         "name": "patriar's seal",
-        "deck_category": "Ramp,Untap Creature",
+        "deck_category": [
+            "Ramp",
+            "Untap Creature"
+        ],
         "mana_cost": "{3}",
         "cmc": 3.0,
         "card_type": "Artifact",
@@ -509,7 +534,10 @@
     {
         "quantity": 1,
         "name": "stitch together",
-        "deck_category": "Reanimate,Sorcery",
+        "deck_category": [
+            "Reanimate",
+            "Sorcery"
+        ],
         "mana_cost": "{B}{B}",
         "cmc": 2.0,
         "card_type": "Sorcery",

@@ -32,7 +32,7 @@ class Card:
             name=json['name'].strip().lower(),
             collection=json.get('collection'),
             quantity=int(json['quantity']) if json.get('quantity') else None,
-            deck_category=json.get('category'),
+            deck_category=json.get('category') if isinstance(json.get('category'), list) else json.get('category'),
             color_tag=json.get('color_tag'),
         )
 
@@ -43,7 +43,8 @@ class Card:
             parts[-1] += f" ({self.collection})"
 
         if self.deck_category:
-            parts.append(f"[{self.deck_category}]")
+            category_str = ', '.join(self.deck_category) if isinstance(self.deck_category, list) else self.deck_category
+            parts.append(f"[{category_str}]")
 
         if self.color_tag:
             parts.append(f"^{self.color_tag}^")

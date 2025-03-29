@@ -107,8 +107,9 @@ class Deck:
             remaining, category_part = remaining.rsplit('[', 1)
             category_match = re.search(r'\[([^\]]+)\]$', '[' + category_part)
             if category_match:
-                deck_category = category_match.group(1)
-                remaining = remaining.replace(f'[{deck_category}]', '')
+                # Split por vírgula e remover espaços em branco
+                categories = [cat.strip() for cat in category_match.group(1).split(',')]
+                deck_category = categories if len(categories) > 1 else category_match.group(1)
 
         # Extrai coleção e número do coletor (se existirem)
         collection = None
