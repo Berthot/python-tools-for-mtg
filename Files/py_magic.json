@@ -1,42 +1,1253 @@
 [
     {
         "quantity": 1,
-        "name": "altar of dementia",
-        "deck_category": [
-            "Sac Outlets",
-            "Fill Grave"
-        ],
+        "name": "archway of innovation",
+        "deck_category": null,
+        "mana_cost": "",
+        "cmc": 0.0,
+        "card_type": "Land",
+        "card_description": "This land enters tapped unless you control an Island.\n{T}: Add {U}.\n{U}, {T}: The next spell you cast this turn has improvise. (Your artifacts can help cast that spell. Each artifact you tap after you're done activating mana abilities pays for {1}.)"
+    },
+    {
+        "quantity": 1,
+        "name": "riptide laboratory",
+        "deck_category": null,
+        "mana_cost": "",
+        "cmc": 0.0,
+        "card_type": "Land",
+        "card_description": "{T}: Add {C}.\n{1}{U}, {T}: Return target Wizard you control to its owner's hand."
+    },
+    {
+        "quantity": 1,
+        "name": "mystic sanctuary",
+        "deck_category": null,
+        "mana_cost": "",
+        "cmc": 0.0,
+        "card_type": "Land — Island",
+        "card_description": "({T}: Add {U}.)\nThis land enters tapped unless you control three or more other Islands.\nWhen this land enters untapped, you may put target instant or sorcery card from your graveyard on top of your library."
+    },
+    {
+        "quantity": 1,
+        "name": "gridlock",
+        "deck_category": null,
+        "mana_cost": "{X}{U}",
+        "cmc": 1.0,
+        "card_type": "Instant",
+        "card_description": "Tap X target nonland permanents."
+    },
+    {
+        "quantity": 1,
+        "name": "consign to memory",
+        "deck_category": null,
+        "mana_cost": "{U}",
+        "cmc": 1.0,
+        "card_type": "Instant",
+        "card_description": "Replicate {1} (When you cast this spell, copy it for each time you paid its replicate cost. You may choose new targets for the copies.)\nCounter target triggered ability or colorless spell."
+    },
+    {
+        "quantity": 1,
+        "name": "unsummon",
+        "deck_category": null,
+        "mana_cost": "{U}",
+        "cmc": 1.0,
+        "card_type": "Instant",
+        "card_description": "Return target creature to its owner's hand."
+    },
+    {
+        "quantity": 1,
+        "name": "spell burst",
+        "deck_category": null,
+        "mana_cost": "{X}{U}",
+        "cmc": 1.0,
+        "card_type": "Instant",
+        "card_description": "Buyback {3} (You may pay an additional {3} as you cast this spell. If you do, put this card into your hand as it resolves.)\nCounter target spell with mana value X."
+    },
+    {
+        "quantity": 1,
+        "name": "high tide",
+        "deck_category": null,
+        "mana_cost": "{U}",
+        "cmc": 1.0,
+        "card_type": "Instant",
+        "card_description": "Until end of turn, whenever a player taps an Island for mana, that player adds an additional {U}."
+    },
+    {
+        "quantity": 1,
+        "name": "spell pierce",
+        "deck_category": null,
+        "mana_cost": "{U}",
+        "cmc": 1.0,
+        "card_type": "Instant",
+        "card_description": "Counter target noncreature spell unless its controller pays {2}."
+    },
+    {
+        "quantity": 1,
+        "name": "ponder",
+        "deck_category": null,
+        "mana_cost": "{U}",
+        "cmc": 1.0,
+        "card_type": "Sorcery",
+        "card_description": "Look at the top three cards of your library, then put them back in any order. You may shuffle.\nDraw a card."
+    },
+    {
+        "quantity": 1,
+        "name": "ponder",
+        "deck_category": null,
+        "mana_cost": "{U}",
+        "cmc": 1.0,
+        "card_type": "Sorcery",
+        "card_description": "Look at the top three cards of your library, then put them back in any order. You may shuffle.\nDraw a card."
+    },
+    {
+        "quantity": 1,
+        "name": "pongify",
+        "deck_category": null,
+        "mana_cost": "{U}",
+        "cmc": 1.0,
+        "card_type": "Instant",
+        "card_description": "Destroy target creature. It can't be regenerated. Its controller creates a 3/3 green Ape creature token."
+    },
+    {
+        "quantity": 1,
+        "name": "ingenious prodigy",
+        "deck_category": null,
+        "mana_cost": "{X}{U}",
+        "cmc": 1.0,
+        "card_type": "Creature — Human Wizard",
+        "card_description": "Skulk (This creature can't be blocked by creatures with greater power.)\nThis creature enters with X +1/+1 counters on it.\nAt the beginning of your upkeep, if this creature has one or more +1/+1 counters on it, you may remove a +1/+1 counter from it. If you do, draw a card."
+    },
+    {
+        "quantity": 1,
+        "name": "jump",
+        "deck_category": null,
+        "mana_cost": "{U}",
+        "cmc": 1.0,
+        "card_type": "Instant",
+        "card_description": "Target creature gains flying until end of turn."
+    },
+    {
+        "quantity": 1,
+        "name": "bounce off",
+        "deck_category": null,
+        "mana_cost": "{U}",
+        "cmc": 1.0,
+        "card_type": "Instant",
+        "card_description": "Return target creature or Vehicle to its owner's hand."
+    },
+    {
+        "quantity": 1,
+        "name": "blustersquall",
+        "deck_category": null,
+        "mana_cost": "{U}",
+        "cmc": 1.0,
+        "card_type": "Instant",
+        "card_description": "Tap target creature you don't control.\nOverload {3}{U} (You may cast this spell for its overload cost. If you do, change \"target\" in its text to \"each.\")"
+    },
+    {
+        "quantity": 1,
+        "name": "shore up",
+        "deck_category": null,
+        "mana_cost": "{U}",
+        "cmc": 1.0,
+        "card_type": "Instant",
+        "card_description": "Target creature you control gets +1/+1 and gains hexproof until end of turn. Untap it. (It can't be the target of spells or abilities your opponents control.)"
+    },
+    {
+        "quantity": 1,
+        "name": "syncopate",
+        "deck_category": null,
+        "mana_cost": "{X}{U}",
+        "cmc": 1.0,
+        "card_type": "Instant",
+        "card_description": "Counter target spell unless its controller pays {X}. If that spell is countered this way, exile it instead of putting it into its owner's graveyard."
+    },
+    {
+        "quantity": 1,
+        "name": "syncopate",
+        "deck_category": null,
+        "mana_cost": "{X}{U}",
+        "cmc": 1.0,
+        "card_type": "Instant",
+        "card_description": "Counter target spell unless its controller pays {X}. If that spell is countered this way, exile it instead of putting it into its owner's graveyard."
+    },
+    {
+        "quantity": 1,
+        "name": "gitaxian probe",
+        "deck_category": null,
+        "mana_cost": "{U/P}",
+        "cmc": 1.0,
+        "card_type": "Sorcery",
+        "card_description": "({U/P} can be paid with either {U} or 2 life.)\nLook at target player's hand.\nDraw a card."
+    },
+    {
+        "quantity": 1,
+        "name": "suspend",
+        "deck_category": null,
+        "mana_cost": "{U}",
+        "cmc": 1.0,
+        "card_type": "Instant",
+        "card_description": "Exile target creature and put two time counters on it. If it doesn't have suspend, it gains suspend. (At the beginning of its owner's upkeep, they remove a time counter. When the last is removed, they may play it without paying its mana cost. If it's a creature, it has haste.)"
+    },
+    {
+        "quantity": 1,
+        "name": "brainstorm",
+        "deck_category": null,
+        "mana_cost": "{U}",
+        "cmc": 1.0,
+        "card_type": "Instant",
+        "card_description": "Draw three cards, then put two cards from your hand on top of your library in any order."
+    },
+    {
+        "quantity": 1,
+        "name": "serum visions",
+        "deck_category": null,
+        "mana_cost": "{U}",
+        "cmc": 1.0,
+        "card_type": "Sorcery",
+        "card_description": "Draw a card. Scry 2."
+    },
+    {
+        "quantity": 1,
+        "name": "remand",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant",
+        "card_description": "Counter target spell. If that spell is countered this way, put it into its owner's hand instead of into that player's graveyard.\nDraw a card."
+    },
+    {
+        "quantity": 1,
+        "name": "experimental augury",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant",
+        "card_description": "Look at the top three cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order. Proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)"
+    },
+    {
+        "quantity": 1,
+        "name": "baral, chief of compliance",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Legendary Creature — Human Wizard",
+        "card_description": "Instant and sorcery spells you cast cost {1} less to cast.\nWhenever a spell or ability you control counters a spell, you may draw a card. If you do, discard a card."
+    },
+    {
+        "quantity": 1,
+        "name": "stasis field",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Enchantment — Aura",
+        "card_description": "Enchant creature\nEnchanted creature has base power and toughness 0/2, has defender, and loses all other abilities."
+    },
+    {
+        "quantity": 1,
+        "name": "disrupting shoal",
+        "deck_category": null,
+        "mana_cost": "{X}{U}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant — Arcane",
+        "card_description": "You may exile a blue card with mana value X from your hand rather than pay this spell's mana cost.\nCounter target spell if its mana value is X."
+    },
+    {
+        "quantity": 1,
+        "name": "borne upon a wind",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant",
+        "card_description": "You may cast spells this turn as though they had flash.\nDraw a card."
+    },
+    {
+        "quantity": 1,
+        "name": "counterspell",
+        "deck_category": null,
+        "mana_cost": "{U}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant",
+        "card_description": "Counter target spell."
+    },
+    {
+        "quantity": 1,
+        "name": "long river's pull",
+        "deck_category": null,
+        "mana_cost": "{U}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant",
+        "card_description": "Gift a card (You may promise an opponent a gift as you cast this spell. If you do, they draw a card before its other effects.)\nCounter target creature spell. If the gift was promised, instead counter target spell."
+    },
+    {
+        "quantity": 1,
+        "name": "augury owl",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Creature — Bird",
+        "card_description": "Flying\nWhen this creature enters, scry 3. (Look at the top three cards of your library, then put any number of them on the bottom and the rest on top in any order.)"
+    },
+    {
+        "quantity": 1,
+        "name": "reasonable doubt",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant",
+        "card_description": "Counter target spell unless its controller pays {2}.\nSuspect up to one target creature. (A suspected creature has menace and can't block.)"
+    },
+    {
+        "quantity": 1,
+        "name": "teferi's time twist",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant",
+        "card_description": "Exile target permanent you control. Return that card to the battlefield under its owner's control at the beginning of the next end step. If it enters as a creature, it enters with an additional +1/+1 counter on it."
+    },
+    {
+        "quantity": 1,
+        "name": "plumecreed escort",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Creature — Bird Scout",
+        "card_description": "Flash\nFlying\nWhen this creature enters, target creature you control gains hexproof until end of turn."
+    },
+    {
+        "quantity": 1,
+        "name": "essence scatter",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant",
+        "card_description": "Counter target creature spell."
+    },
+    {
+        "quantity": 1,
+        "name": "reality spasm",
+        "deck_category": null,
+        "mana_cost": "{X}{U}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant",
+        "card_description": "Choose one —\n• Tap X target permanents.\n• Untap X target permanents."
+    },
+    {
+        "quantity": 1,
+        "name": "snap",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant",
+        "card_description": "Return target creature to its owner's hand. Untap up to two lands."
+    },
+    {
+        "quantity": 1,
+        "name": "ior ruin expedition",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Enchantment",
+        "card_description": "Landfall — Whenever a land you control enters, you may put a quest counter on this enchantment.\nRemove three quest counters from this enchantment and sacrifice it: Draw two cards."
+    },
+    {
+        "quantity": 1,
+        "name": "goldberry, river-daughter",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Legendary Creature — Nymph",
+        "card_description": "{T}: Move a counter of each kind not on Goldberry from another target permanent you control onto Goldberry.\n{U}, {T}: Move one or more counters from Goldberry onto another target permanent you control. If you do, draw a card."
+    },
+    {
+        "quantity": 1,
+        "name": "shifting grift",
+        "deck_category": null,
+        "mana_cost": "{U}{U}",
+        "cmc": 2.0,
+        "card_type": "Sorcery",
+        "card_description": "Spree (Choose one or more additional costs.)\n+ {2} — Exchange control of two target creatures.\n+ {1} — Exchange control of two target artifacts.\n+ {1} — Exchange control of two target enchantments."
+    },
+    {
+        "quantity": 1,
+        "name": "impulse",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant",
+        "card_description": "Look at the top four cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order."
+    },
+    {
+        "quantity": 1,
+        "name": "drake hatcher",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Creature — Human Wizard",
+        "card_description": "Vigilance, prowess (Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn.)\nWhenever this creature deals combat damage to a player, put that many incubation counters on it.\nRemove three incubation counters from this creature: Create a 2/2 blue Drake creature token with flying."
+    },
+    {
+        "quantity": 1,
+        "name": "wharf infiltrator",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Creature — Human Horror",
+        "card_description": "Skulk (This creature can't be blocked by creatures with greater power.)\nWhenever this creature deals combat damage to a player, you may draw a card. If you do, discard a card.\nWhenever you discard a creature card, you may pay {2}. If you do, create a 3/2 colorless Eldrazi Horror creature token."
+    },
+    {
+        "quantity": 1,
+        "name": "curse of the swine",
+        "deck_category": null,
+        "mana_cost": "{X}{U}{U}",
+        "cmc": 2.0,
+        "card_type": "Sorcery",
+        "card_description": "Exile X target creatures. For each creature exiled this way, its controller creates a 2/2 green Boar creature token."
+    },
+    {
+        "quantity": 1,
+        "name": "keep safe",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant",
+        "card_description": "Counter target spell that targets a permanent you control.\nDraw a card."
+    },
+    {
+        "quantity": 1,
+        "name": "convincing mirage",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Enchantment — Aura",
+        "card_description": "Enchant land\nAs this Aura enters, choose a basic land type.\nEnchanted land is the chosen type."
+    },
+    {
+        "quantity": 1,
+        "name": "parcel myr",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Artifact Creature — Clue Myr",
+        "card_description": "{2}, Sacrifice this creature: Draw a card."
+    },
+    {
+        "quantity": 1,
+        "name": "hithlain knots",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant",
+        "card_description": "Tap target creature. Scry 1.\nDraw a card."
+    },
+    {
+        "quantity": 1,
+        "name": "negate",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant",
+        "card_description": "Counter target noncreature spell."
+    },
+    {
+        "quantity": 1,
+        "name": "the reality chip",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Legendary Artifact Creature — Equipment Jellyfish",
+        "card_description": "You may look at the top card of your library any time.\nAs long as The Reality Chip is attached to a creature, you may play lands and cast spells from the top of your library.\nReconfigure {2}{U} ({2}{U}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)"
+    },
+    {
+        "quantity": 1,
+        "name": "mind stone",
+        "deck_category": null,
         "mana_cost": "{2}",
         "cmc": 2.0,
         "card_type": "Artifact",
-        "card_description": "Sacrifice a creature: Target player mills cards equal to the sacrificed creature's power."
+        "card_description": "{T}: Add {C}.\n{1}, {T}, Sacrifice this artifact: Draw a card."
     },
     {
         "quantity": 1,
-        "name": "final parting",
-        "deck_category": [
-            "Grave Tutor",
-            "Sorcery"
-        ],
-        "mana_cost": "{3}{B}{B}",
+        "name": "merchant scroll",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Sorcery",
+        "card_description": "Search your library for a blue instant card, reveal that card, put it into your hand, then shuffle."
+    },
+    {
+        "quantity": 1,
+        "name": "prologue to phyresis",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant",
+        "card_description": "Each opponent gets a poison counter.\nDraw a card."
+    },
+    {
+        "quantity": 1,
+        "name": "resculpt",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant",
+        "card_description": "Exile target artifact or creature. Its controller creates a 4/4 blue and red Elemental creature token."
+    },
+    {
+        "quantity": 1,
+        "name": "dramatic reversal",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant",
+        "card_description": "Untap all nonland permanents you control."
+    },
+    {
+        "quantity": 1,
+        "name": "kasmina's transmutation",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Enchantment — Aura",
+        "card_description": "Enchant creature\nEnchanted creature loses all abilities and has base power and toughness 1/1."
+    },
+    {
+        "quantity": 1,
+        "name": "the tale of tamiyo",
+        "deck_category": null,
+        "mana_cost": "{2}{U}",
+        "cmc": 3.0,
+        "card_type": "Legendary Enchantment — Saga",
+        "card_description": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)\nI, II, III — Mill two cards. If two cards that share a card type were milled this way, draw a card and repeat this process.\nIV — Exile any number of target instant, sorcery, and/or Tamiyo planeswalker cards from your graveyard. Copy them. You may cast any number of the copies."
+    },
+    {
+        "quantity": 1,
+        "name": "falcon abomination",
+        "deck_category": null,
+        "mana_cost": "{2}{U}",
+        "cmc": 3.0,
+        "card_type": "Creature — Zombie Bird",
+        "card_description": "Flying\nWhen this creature enters, create a 2/2 black Zombie creature token with decayed. (It can't block. When it attacks, sacrifice it at end of combat.)"
+    },
+    {
+        "quantity": 1,
+        "name": "flux channeler",
+        "deck_category": null,
+        "mana_cost": "{2}{U}",
+        "cmc": 3.0,
+        "card_type": "Creature — Human Wizard",
+        "card_description": "Whenever you cast a noncreature spell, proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)"
+    },
+    {
+        "quantity": 1,
+        "name": "case of the ransacked lab",
+        "deck_category": null,
+        "mana_cost": "{2}{U}",
+        "cmc": 3.0,
+        "card_type": "Enchantment — Case",
+        "card_description": "Instant and sorcery spells you cast cost {1} less to cast.\nTo solve — You've cast four or more instant and sorcery spells this turn. (If unsolved, solve at the beginning of your end step.)\nSolved — Whenever you cast an instant or sorcery spell, draw a card."
+    },
+    {
+        "quantity": 1,
+        "name": "pestermite",
+        "deck_category": null,
+        "mana_cost": "{2}{U}",
+        "cmc": 3.0,
+        "card_type": "Creature — Faerie Rogue",
+        "card_description": "Flash\nFlying\nWhen this creature enters, you may tap or untap target permanent."
+    },
+    {
+        "quantity": 1,
+        "name": "displace",
+        "deck_category": null,
+        "mana_cost": "{2}{U}",
+        "cmc": 3.0,
+        "card_type": "Instant",
+        "card_description": "Exile up to two target creatures you control, then return those cards to the battlefield under their owner's control."
+    },
+    {
+        "quantity": 1,
+        "name": "said",
+        "deck_category": null,
+        "mana_cost": "{2}{U} // {3}{U}",
+        "cmc": 7.0,
+        "card_type": "Sorcery // Instant",
+        "card_description": {
+            "said": "Return target instant or sorcery card from your graveyard to your hand.",
+            "done": "Tap up to two target creatures. Those creatures don't untap during their controller's next untap step."
+        }
+    },
+    {
+        "quantity": 1,
+        "name": "convolute",
+        "deck_category": null,
+        "mana_cost": "{2}{U}",
+        "cmc": 3.0,
+        "card_type": "Instant",
+        "card_description": "Counter target spell unless its controller pays {4}."
+    },
+    {
+        "quantity": 1,
+        "name": "brainsurge",
+        "deck_category": null,
+        "mana_cost": "{2}{U}",
+        "cmc": 3.0,
+        "card_type": "Instant",
+        "card_description": "Draw four cards, then put two cards from your hand on top of your library in any order."
+    },
+    {
+        "quantity": 1,
+        "name": "commander's sphere",
+        "deck_category": null,
+        "mana_cost": "{3}",
+        "cmc": 3.0,
+        "card_type": "Artifact",
+        "card_description": "{T}: Add one mana of any color in your commander's color identity.\nSacrifice this artifact: Draw a card."
+    },
+    {
+        "quantity": 1,
+        "name": "decoy gambit",
+        "deck_category": null,
+        "mana_cost": "{2}{U}",
+        "cmc": 3.0,
+        "card_type": "Instant",
+        "card_description": "For each opponent, choose up to one target creature that player controls, then return that creature to its owner's hand unless its controller has you draw a card."
+    },
+    {
+        "quantity": 1,
+        "name": "stroke of genius",
+        "deck_category": null,
+        "mana_cost": "{X}{2}{U}",
+        "cmc": 3.0,
+        "card_type": "Instant",
+        "card_description": "Target player draws X cards."
+    },
+    {
+        "quantity": 1,
+        "name": "wavebreak hippocamp",
+        "deck_category": null,
+        "mana_cost": "{2}{U}",
+        "cmc": 3.0,
+        "card_type": "Enchantment Creature — Horse Fish",
+        "card_description": "Whenever you cast your first spell during each opponent's turn, draw a card."
+    },
+    {
+        "quantity": 1,
+        "name": "nadir kraken",
+        "deck_category": null,
+        "mana_cost": "{1}{U}{U}",
+        "cmc": 3.0,
+        "card_type": "Creature — Kraken",
+        "card_description": "Whenever you draw a card, you may pay {1}. If you do, put a +1/+1 counter on this creature and create a 1/1 blue Tentacle creature token."
+    },
+    {
+        "quantity": 1,
+        "name": "mu yanling, sky dancer",
+        "deck_category": null,
+        "mana_cost": "{1}{U}{U}",
+        "cmc": 3.0,
+        "card_type": "Legendary Planeswalker — Yanling",
+        "card_description": "+2: Until your next turn, up to one target creature gets -2/-0 and loses flying.\n−3: Create a 4/4 blue Elemental Bird creature token with flying.\n−8: You get an emblem with \"Islands you control have '{T}: Draw a card.'\""
+    },
+    {
+        "quantity": 1,
+        "name": "lunar insight",
+        "deck_category": null,
+        "mana_cost": "{2}{U}",
+        "cmc": 3.0,
+        "card_type": "Sorcery",
+        "card_description": "Draw a card for each different mana value among nonland permanents you control."
+    },
+    {
+        "quantity": 1,
+        "name": "propaganda",
+        "deck_category": null,
+        "mana_cost": "{2}{U}",
+        "cmc": 3.0,
+        "card_type": "Enchantment",
+        "card_description": "Creatures can't attack you unless their controller pays {2} for each creature they control that's attacking you."
+    },
+    {
+        "quantity": 1,
+        "name": "skyclave relic",
+        "deck_category": null,
+        "mana_cost": "{3}",
+        "cmc": 3.0,
+        "card_type": "Artifact",
+        "card_description": "Kicker {3}\nIndestructible\nWhen this artifact enters, if it was kicked, create two tapped tokens that are copies of this artifact.\n{T}: Add one mana of any color."
+    },
+    {
+        "quantity": 1,
+        "name": "capsize",
+        "deck_category": null,
+        "mana_cost": "{1}{U}{U}",
+        "cmc": 3.0,
+        "card_type": "Instant",
+        "card_description": "Buyback {3} (You may pay an additional {3} as you cast this spell. If you do, put this card into your hand as it resolves.)\nReturn target permanent to its owner's hand."
+    },
+    {
+        "quantity": 1,
+        "name": "drift of phantasms",
+        "deck_category": null,
+        "mana_cost": "{2}{U}",
+        "cmc": 3.0,
+        "card_type": "Creature — Spirit",
+        "card_description": "Defender (This creature can't attack.)\nFlying\nTransmute {1}{U}{U} ({1}{U}{U}, Discard this card: Search your library for a card with the same mana value as this card, reveal it, put it into your hand, then shuffle. Transmute only as a sorcery.)"
+    },
+    {
+        "quantity": 1,
+        "name": "archaeomancer",
+        "deck_category": null,
+        "mana_cost": "{2}{U}{U}",
+        "cmc": 4.0,
+        "card_type": "Creature — Human Wizard",
+        "card_description": "When this creature enters, return target instant or sorcery card from your graveyard to your hand."
+    },
+    {
+        "quantity": 1,
+        "name": "fact or fiction",
+        "deck_category": null,
+        "mana_cost": "{3}{U}",
+        "cmc": 4.0,
+        "card_type": "Instant",
+        "card_description": "Reveal the top five cards of your library. An opponent separates those cards into two piles. Put one pile into your hand and the other into your graveyard."
+    },
+    {
+        "quantity": 1,
+        "name": "nevermaker",
+        "deck_category": null,
+        "mana_cost": "{3}{U}",
+        "cmc": 4.0,
+        "card_type": "Creature — Elemental",
+        "card_description": "Flying\nWhen this creature leaves the battlefield, put target nonland permanent on top of its owner's library.\nEvoke {3}{U} (You may cast this spell for its evoke cost. If you do, it's sacrificed when it enters.)"
+    },
+    {
+        "quantity": 1,
+        "name": "leyline of anticipation",
+        "deck_category": null,
+        "mana_cost": "{2}{U}{U}",
+        "cmc": 4.0,
+        "card_type": "Enchantment",
+        "card_description": "If this card is in your opening hand, you may begin the game with it on the battlefield.\nYou may cast spells as though they had flash."
+    },
+    {
+        "quantity": 1,
+        "name": "mass manipulation",
+        "deck_category": null,
+        "mana_cost": "{X}{X}{U}{U}{U}{U}",
+        "cmc": 4.0,
+        "card_type": "Sorcery",
+        "card_description": "Gain control of X target creatures and/or planeswalkers."
+    },
+    {
+        "quantity": 1,
+        "name": "consuming tide",
+        "deck_category": null,
+        "mana_cost": "{2}{U}{U}",
+        "cmc": 4.0,
+        "card_type": "Sorcery",
+        "card_description": "Each player chooses a nonland permanent they control. Return all nonland permanents not chosen this way to their owners' hands. Then you draw a card for each opponent who has more cards in their hand than you."
+    },
+    {
+        "quantity": 1,
+        "name": "mystic retrieval",
+        "deck_category": null,
+        "mana_cost": "{3}{U}",
+        "cmc": 4.0,
+        "card_type": "Sorcery",
+        "card_description": "Return target instant or sorcery card from your graveyard to your hand.\nFlashback {2}{R} (You may cast this card from your graveyard for its flashback cost. Then exile it.)"
+    },
+    {
+        "quantity": 1,
+        "name": "jace's sanctum",
+        "deck_category": null,
+        "mana_cost": "{3}{U}",
+        "cmc": 4.0,
+        "card_type": "Enchantment",
+        "card_description": "Instant and sorcery spells you cast cost {1} less to cast.\nWhenever you cast an instant or sorcery spell, scry 1."
+    },
+    {
+        "quantity": 1,
+        "name": "wash out",
+        "deck_category": null,
+        "mana_cost": "{3}{U}",
+        "cmc": 4.0,
+        "card_type": "Sorcery",
+        "card_description": "Return all permanents of the color of your choice to their owners' hands."
+    },
+    {
+        "quantity": 1,
+        "name": "stunt double",
+        "deck_category": null,
+        "mana_cost": "{3}{U}",
+        "cmc": 4.0,
+        "card_type": "Creature — Shapeshifter",
+        "card_description": "Flash\nYou may have this creature enter as a copy of any creature on the battlefield."
+    },
+    {
+        "quantity": 1,
+        "name": "stunt double",
+        "deck_category": null,
+        "mana_cost": "{3}{U}",
+        "cmc": 4.0,
+        "card_type": "Creature — Shapeshifter",
+        "card_description": "Flash\nYou may have this creature enter as a copy of any creature on the battlefield."
+    },
+    {
+        "quantity": 1,
+        "name": "talrand, sky summoner",
+        "deck_category": null,
+        "mana_cost": "{2}{U}{U}",
+        "cmc": 4.0,
+        "card_type": "Legendary Creature — Merfolk Wizard",
+        "card_description": "Whenever you cast an instant or sorcery spell, create a 2/2 blue Drake creature token with flying."
+    },
+    {
+        "quantity": 1,
+        "name": "talrand, sky summoner",
+        "deck_category": null,
+        "mana_cost": "{2}{U}{U}",
+        "cmc": 4.0,
+        "card_type": "Legendary Creature — Merfolk Wizard",
+        "card_description": "Whenever you cast an instant or sorcery spell, create a 2/2 blue Drake creature token with flying."
+    },
+    {
+        "quantity": 1,
+        "name": "vedalken squirrel-whacker",
+        "deck_category": null,
+        "mana_cost": "{3}{U}",
+        "cmc": 4.0,
+        "card_type": "Creature — Vedalken Guest",
+        "card_description": "As this creature enters, roll a six-sided die twice. Its base power becomes the first result and its base toughness becomes the second result.\nIf you would roll one or more six-sided dice, instead roll them and you may exchange one result with this creature's base power or base toughness."
+    },
+    {
+        "quantity": 1,
+        "name": "see double",
+        "deck_category": null,
+        "mana_cost": "{2}{U}{U}",
+        "cmc": 4.0,
+        "card_type": "Instant",
+        "card_description": "This spell can't be copied.\nChoose one. If an opponent has eight or more cards in their graveyard, you may choose both instead.\n• Copy target spell. You may choose new targets for the copy. (A copy of a permanent spell becomes a token.)\n• Create a token that's a copy of target creature."
+    },
+    {
+        "quantity": 1,
+        "name": "disciple of the ring",
+        "deck_category": null,
+        "mana_cost": "{3}{U}{U}",
+        "cmc": 5.0,
+        "card_type": "Creature — Human Wizard",
+        "card_description": "{1}, Exile an instant or sorcery card from your graveyard: Choose one —\n• Counter target noncreature spell unless its controller pays {2}.\n• This creature gets +1/+1 until end of turn.\n• Tap target creature.\n• Untap target creature."
+    },
+    {
+        "quantity": 1,
+        "name": "docent of perfection",
+        "deck_category": null,
+        "mana_cost": "{3}{U}{U} // ",
+        "cmc": 5.0,
+        "card_type": "Creature — Insect Horror // Creature — Eldrazi Insect",
+        "card_description": {
+            "docent of perfection": "Flying\nWhenever you cast an instant or sorcery spell, create a 1/1 blue Human Wizard creature token. Then if you control three or more Wizards, transform this creature.",
+            "final iteration": "Flying\nWizards you control get +2/+1 and have flying.\nWhenever you cast an instant or sorcery spell, create a 1/1 blue Human Wizard creature token."
+        }
+    },
+    {
+        "quantity": 1,
+        "name": "peregrine drake",
+        "deck_category": null,
+        "mana_cost": "{4}{U}",
+        "cmc": 5.0,
+        "card_type": "Creature — Drake",
+        "card_description": "Flying\nWhen this creature enters, untap up to five lands."
+    },
+    {
+        "quantity": 1,
+        "name": "body double",
+        "deck_category": null,
+        "mana_cost": "{4}{U}",
+        "cmc": 5.0,
+        "card_type": "Creature — Shapeshifter",
+        "card_description": "You may have this creature enter as a copy of any creature card in a graveyard."
+    },
+    {
+        "quantity": 1,
+        "name": "body double",
+        "deck_category": null,
+        "mana_cost": "{4}{U}",
+        "cmc": 5.0,
+        "card_type": "Creature — Shapeshifter",
+        "card_description": "You may have this creature enter as a copy of any creature card in a graveyard."
+    },
+    {
+        "quantity": 1,
+        "name": "arcane melee",
+        "deck_category": null,
+        "mana_cost": "{4}{U}",
+        "cmc": 5.0,
+        "card_type": "Enchantment",
+        "card_description": "Instant and sorcery spells cost {2} less to cast."
+    },
+    {
+        "quantity": 1,
+        "name": "precursor golem",
+        "deck_category": null,
+        "mana_cost": "{5}",
+        "cmc": 5.0,
+        "card_type": "Artifact Creature — Golem",
+        "card_description": "When this creature enters, create two 3/3 colorless Golem artifact creature tokens.\nWhenever a player casts an instant or sorcery spell that targets only a single Golem, that player copies that spell for each other Golem that spell could target. Each copy targets a different one of those Golems."
+    },
+    {
+        "quantity": 1,
+        "name": "metallurgic summonings",
+        "deck_category": null,
+        "mana_cost": "{3}{U}{U}",
+        "cmc": 5.0,
+        "card_type": "Enchantment",
+        "card_description": "Whenever you cast an instant or sorcery spell, create an X/X colorless Construct artifact creature token, where X is that spell's mana value.\n{3}{U}{U}, Exile this enchantment: Return all instant and sorcery cards from your graveyard to your hand. Activate only if you control six or more artifacts."
+    },
+    {
+        "quantity": 1,
+        "name": "jin-gitaxias",
+        "deck_category": null,
+        "mana_cost": "{3}{U}{U} // ",
+        "cmc": 5.0,
+        "card_type": "Legendary Creature — Phyrexian Praetor // Enchantment — Saga",
+        "card_description": {
+            "jin-gitaxias": "Ward {2}\nWhenever you cast a noncreature spell with mana value 3 or greater, draw a card.\n{3}{U}: Exile Jin-Gitaxias, then return it to the battlefield transformed under its owner's control. Activate only as a sorcery and only if you have seven or more cards in hand.",
+            "the great synthesis": "(As this Saga enters and after your draw step, add a lore counter.)\nI — Draw cards equal to the number of cards in your hand. You have no maximum hand size for as long as you control this Saga.\nII — Return all non-Phyrexian creatures to their owners' hands.\nIII — You may cast any number of spells from your hand without paying their mana costs. Exile this Saga, then return it to the battlefield (front face up)."
+        }
+    },
+    {
+        "quantity": 1,
+        "name": "lórien revealed",
+        "deck_category": null,
+        "mana_cost": "{3}{U}{U}",
         "cmc": 5.0,
         "card_type": "Sorcery",
-        "card_description": "Search your library for two cards. Put one into your hand and the other into your graveyard. Then shuffle."
+        "card_description": "Draw three cards.\nIslandcycling {1} ({1}, Discard this card: Search your library for an Island card, reveal it, put it into your hand, then shuffle.)"
     },
     {
         "quantity": 1,
-        "name": "funeral room // awakening hall",
-        "deck_category": [
-            "Bombs",
-            "Death Triggers",
-            "Reanimate"
-        ],
-        "mana_cost": "{2}{B} // {6}{B}{B}",
-        "cmc": 11.0,
-        "card_type": "Enchantment — Room // Enchantment — Room",
-        "card_description": {
-            "Funeral Room": "Whenever a creature you control dies, each opponent loses 1 life and you gain 1 life.\n(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.)",
-            "Awakening Hall": "When you unlock this door, return all creature cards from your graveyard to the battlefield.\n(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.)"
-        }
+        "name": "spell swindle",
+        "deck_category": null,
+        "mana_cost": "{3}{U}{U}",
+        "cmc": 5.0,
+        "card_type": "Instant",
+        "card_description": "Counter target spell. Create X Treasure tokens, where X is that spell's mana value. (They're artifacts with \"{T}, Sacrifice this token: Add one mana of any color.\")"
+    },
+    {
+        "quantity": 1,
+        "name": "aetherspouts",
+        "deck_category": null,
+        "mana_cost": "{3}{U}{U}",
+        "cmc": 5.0,
+        "card_type": "Instant",
+        "card_description": "For each attacking creature, its owner puts it on their choice of the top or bottom of their library."
+    },
+    {
+        "quantity": 1,
+        "name": "mulldrifter",
+        "deck_category": null,
+        "mana_cost": "{4}{U}",
+        "cmc": 5.0,
+        "card_type": "Creature — Elemental",
+        "card_description": "Flying\nWhen this creature enters, draw two cards.\nEvoke {2}{U} (You may cast this spell for its evoke cost. If you do, it's sacrificed when it enters.)"
+    },
+    {
+        "quantity": 1,
+        "name": "guile",
+        "deck_category": null,
+        "mana_cost": "{3}{U}{U}{U}",
+        "cmc": 6.0,
+        "card_type": "Creature — Elemental Incarnation",
+        "card_description": "This creature can't be blocked except by three or more creatures.\nIf a spell or ability you control would counter a spell, instead exile that spell and you may play that card without paying its mana cost.\nWhen Guile is put into a graveyard from anywhere, shuffle it into its owner's library."
+    },
+    {
+        "quantity": 1,
+        "name": "archetype of imagination",
+        "deck_category": null,
+        "mana_cost": "{4}{U}{U}",
+        "cmc": 6.0,
+        "card_type": "Enchantment Creature — Human Wizard",
+        "card_description": "Creatures you control have flying.\nCreatures your opponents control lose flying and can't have or gain flying."
+    },
+    {
+        "quantity": 1,
+        "name": "archetype of imagination",
+        "deck_category": null,
+        "mana_cost": "{4}{U}{U}",
+        "cmc": 6.0,
+        "card_type": "Enchantment Creature — Human Wizard",
+        "card_description": "Creatures you control have flying.\nCreatures your opponents control lose flying and can't have or gain flying."
+    },
+    {
+        "quantity": 1,
+        "name": "dream eater",
+        "deck_category": null,
+        "mana_cost": "{4}{U}{U}",
+        "cmc": 6.0,
+        "card_type": "Creature — Nightmare Sphinx",
+        "card_description": "Flash\nFlying\nWhen this creature enters, surveil 4. When you do, you may return target nonland permanent an opponent controls to its owner's hand. (To surveil 4, look at the top four cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)"
+    },
+    {
+        "quantity": 1,
+        "name": "sapphire drake",
+        "deck_category": null,
+        "mana_cost": "{5}{U}",
+        "cmc": 6.0,
+        "card_type": "Creature — Drake",
+        "card_description": "Flying\nEach creature you control with a +1/+1 counter on it has flying."
+    },
+    {
+        "quantity": 1,
+        "name": "marina vendrell's grimoire",
+        "deck_category": null,
+        "mana_cost": "{5}{U}",
+        "cmc": 6.0,
+        "card_type": "Legendary Artifact",
+        "card_description": "When Marina Vendrell's Grimoire enters, if you cast it, draw five cards.\nYou have no maximum hand size and don't lose the game for having 0 or less life.\nWhenever you gain life, draw that many cards.\nWhenever you lose life, discard that many cards. Then if you have no cards in hand, you lose the game."
+    },
+    {
+        "quantity": 1,
+        "name": "stolen identity",
+        "deck_category": null,
+        "mana_cost": "{4}{U}{U}",
+        "cmc": 6.0,
+        "card_type": "Sorcery",
+        "card_description": "Create a token that's a copy of target artifact or creature.\nCipher (Then you may exile this spell card encoded on a creature you control. Whenever that creature deals combat damage to a player, its controller may cast a copy of the encoded card without paying its mana cost.)"
+    },
+    {
+        "quantity": 1,
+        "name": "elminster's simulacrum",
+        "deck_category": null,
+        "mana_cost": "{4}{U}{U}",
+        "cmc": 6.0,
+        "card_type": "Instant",
+        "card_description": "For each opponent, you create a token that's a copy of up to one target creature that player controls."
+    },
+    {
+        "quantity": 1,
+        "name": "warstorm surge",
+        "deck_category": null,
+        "mana_cost": "{5}{R}",
+        "cmc": 6.0,
+        "card_type": "Enchantment",
+        "card_description": "Whenever a creature you control enters, it deals damage equal to its power to any target."
+    },
+    {
+        "quantity": 1,
+        "name": "diluvian primordial",
+        "deck_category": null,
+        "mana_cost": "{5}{U}{U}",
+        "cmc": 7.0,
+        "card_type": "Creature — Avatar",
+        "card_description": "Flying\nWhen this creature enters, for each opponent, you may cast up to one target instant or sorcery card from that player's graveyard without paying its mana cost. If a spell cast this way would be put into a graveyard, exile it instead."
+    },
+    {
+        "quantity": 1,
+        "name": "tolarian terror",
+        "deck_category": null,
+        "mana_cost": "{6}{U}",
+        "cmc": 7.0,
+        "card_type": "Creature — Serpent",
+        "card_description": "This spell costs {1} less to cast for each instant and sorcery card in your graveyard.\nWard {2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)"
+    },
+    {
+        "quantity": 1,
+        "name": "sphinx of the second sun",
+        "deck_category": null,
+        "mana_cost": "{6}{U}{U}",
+        "cmc": 8.0,
+        "card_type": "Creature — Sphinx",
+        "card_description": "Flying\nAt the beginning of each of your postcombat main phases, there is an additional beginning phase after this phase. (The beginning phase includes the untap, upkeep, and draw steps.)"
+    },
+    {
+        "quantity": 1,
+        "name": "stormtide leviathan",
+        "deck_category": null,
+        "mana_cost": "{5}{U}{U}{U}",
+        "cmc": 8.0,
+        "card_type": "Creature — Leviathan",
+        "card_description": "Islandwalk (This creature can't be blocked as long as defending player controls an Island.)\nAll lands are Islands in addition to their other types.\nCreatures without flying or islandwalk can't attack."
+    },
+    {
+        "quantity": 1,
+        "name": "kederekt leviathan",
+        "deck_category": null,
+        "mana_cost": "{6}{U}{U}",
+        "cmc": 8.0,
+        "card_type": "Creature — Leviathan",
+        "card_description": "When this creature enters, return all other nonland permanents to their owners' hands.\nUnearth {6}{U} ({6}{U}: Return this card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step or if it would leave the battlefield. Unearth only as a sorcery.)"
+    },
+    {
+        "quantity": 1,
+        "name": "octavia, living thesis",
+        "deck_category": null,
+        "mana_cost": "{8}{U}{U}",
+        "cmc": 10.0,
+        "card_type": "Legendary Creature — Elemental Octopus",
+        "card_description": "This spell costs {8} less to cast if you have eight or more instant and/or sorcery cards in your graveyard.\nWard {8}\nMagecraft — Whenever you cast or copy an instant or sorcery spell, target creature has base power and toughness 8/8 until end of turn."
+    },
+    {
+        "quantity": 1,
+        "name": "seal of removal",
+        "deck_category": null,
+        "mana_cost": "{U}",
+        "cmc": 1.0,
+        "card_type": "Enchantment",
+        "card_description": "Sacrifice this enchantment: Return target creature to its owner's hand."
+    },
+    {
+        "quantity": 1,
+        "name": "boomerang",
+        "deck_category": null,
+        "mana_cost": "{U}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant",
+        "card_description": "Return target permanent to its owner's hand."
+    },
+    {
+        "quantity": 1,
+        "name": "hermetic study",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Enchantment — Aura",
+        "card_description": "Enchant creature\nEnchanted creature has \"{T}: This creature deals 1 damage to any target.\""
+    },
+    {
+        "quantity": 1,
+        "name": "evie frye",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Legendary Creature — Human Assassin",
+        "card_description": "Partner with Jacob Frye (When this creature enters, target player may put Jacob into their hand from their library, then shuffle.)\n{1}, {T}: Draw a card, then discard a card. When you discard a creature card this way, target creature you control can't be blocked this turn."
+    },
+    {
+        "quantity": 1,
+        "name": "skygames",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Enchantment — Aura",
+        "card_description": "Enchant land\nEnchanted land has \"{T}: Target creature gains flying until end of turn. Activate only as a sorcery.\""
+    },
+    {
+        "quantity": 1,
+        "name": "contentious plan",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Sorcery",
+        "card_description": "Proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)\nDraw a card."
+    },
+    {
+        "quantity": 1,
+        "name": "fleeting reflection",
+        "deck_category": null,
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "card_type": "Instant",
+        "card_description": "Target creature you control gains hexproof until end of turn. Untap that creature. Until end of turn, it becomes a copy of up to one other target creature."
+    },
+    {
+        "quantity": 1,
+        "name": "as foretold",
+        "deck_category": null,
+        "mana_cost": "{2}{U}",
+        "cmc": 3.0,
+        "card_type": "Enchantment",
+        "card_description": "At the beginning of your upkeep, put a time counter on this enchantment.\nOnce each turn, you may pay {0} rather than pay the mana cost for a spell you cast with mana value X or less, where X is the number of time counters on this enchantment."
+    },
+    {
+        "quantity": 1,
+        "name": "dictate of kruphix",
+        "deck_category": null,
+        "mana_cost": "{1}{U}{U}",
+        "cmc": 3.0,
+        "card_type": "Enchantment",
+        "card_description": "Flash (You may cast this spell any time you could cast an instant.)\nAt the beginning of each player's draw step, that player draws an additional card."
+    },
+    {
+        "quantity": 1,
+        "name": "fblthp, lost on the range",
+        "deck_category": null,
+        "mana_cost": "{1}{U}{U}",
+        "cmc": 3.0,
+        "card_type": "Legendary Creature — Homunculus",
+        "card_description": "Ward {2}\nYou may look at the top card of your library any time.\nThe top card of your library has plot. The plot cost is equal to its mana cost.\nYou may plot nonland cards from the top of your library."
+    },
+    {
+        "quantity": 1,
+        "name": "insight",
+        "deck_category": null,
+        "mana_cost": "{2}{U}",
+        "cmc": 3.0,
+        "card_type": "Enchantment",
+        "card_description": "Whenever an opponent casts a green spell, you draw a card."
+    },
+    {
+        "quantity": 1,
+        "name": "deep analysis",
+        "deck_category": null,
+        "mana_cost": "{3}{U}",
+        "cmc": 4.0,
+        "card_type": "Sorcery",
+        "card_description": "Target player draws two cards.\nFlashback—{1}{U}, Pay 3 life. (You may cast this card from your graveyard for its flashback cost. Then exile it.)"
+    },
+    {
+        "quantity": 1,
+        "name": "aetherize",
+        "deck_category": null,
+        "mana_cost": "{3}{U}",
+        "cmc": 4.0,
+        "card_type": "Instant",
+        "card_description": "Return all attacking creatures to their owner's hand."
+    },
+    {
+        "quantity": 1,
+        "name": "rewind",
+        "deck_category": null,
+        "mana_cost": "{2}{U}{U}",
+        "cmc": 4.0,
+        "card_type": "Instant",
+        "card_description": "Counter target spell. Untap up to four lands."
+    },
+    {
+        "quantity": 1,
+        "name": "psychic spiral",
+        "deck_category": null,
+        "mana_cost": "{4}{U}",
+        "cmc": 5.0,
+        "card_type": "Instant",
+        "card_description": "Shuffle all cards from your graveyard into your library. Target player mills that many cards."
+    },
+    {
+        "quantity": 1,
+        "name": "inspiring refrain",
+        "deck_category": null,
+        "mana_cost": "{4}{U}{U}",
+        "cmc": 6.0,
+        "card_type": "Sorcery",
+        "card_description": "Draw two cards. Exile Inspiring Refrain with three time counters on it.\nSuspend 3—{2}{U} (Rather than cast this card from your hand, you may pay {2}{U} and exile it with three time counters on it. At the beginning of your upkeep, remove a time counter. When the last is removed, you may cast it without paying its mana cost.)"
+    },
+    {
+        "quantity": 1,
+        "name": "sword coast serpent",
+        "deck_category": null,
+        "mana_cost": "{5}{U}{U} // {1}{U}",
+        "cmc": 7.0,
+        "card_type": "Creature — Serpent Dragon // Instant — Adventure",
+        "card_description": null
+    },
+    {
+        "quantity": 1,
+        "name": "junk winder",
+        "deck_category": null,
+        "mana_cost": "{5}{U}{U}",
+        "cmc": 7.0,
+        "card_type": "Creature — Serpent",
+        "card_description": "Affinity for tokens (This spell costs {1} less to cast for each token you control.)\nWhenever a token you control enters, tap target nonland permanent an opponent controls. It doesn't untap during its controller's next untap step."
     }
 ]

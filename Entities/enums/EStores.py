@@ -17,6 +17,7 @@ class EStore(Enum):
         BLOOD: 'blood'
         OTHER: 'other'
     """
+    PLAYGROUND = 'playground'
     LIGA = 'liga'
     VILA = 'vila'
     MANA_FIX = 'mana_fix'

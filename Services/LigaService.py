@@ -17,7 +17,7 @@ class LigaService:
         if not open_browser:
             return
         for i, card in enumerate(deck.cards, 1):
-            webbrowser.open(self._get_store_url(card.name, store))
+            webbrowser.open(self._get_store_url(card.get_primary_name(), store))
             if i == limit:
                 break
 
@@ -43,7 +43,8 @@ class LigaService:
             EStore.MERURU: 'https://www.meruru.com.br/?view=ecom/itens&id=64102&busca={card}',
             EStore.LIGA: 'https://www.ligamagic.com.br/?view=cards/search&card={card}',
             EStore.BLOOD: 'https://www.lojabloodmoon.com.br/?view=ecom/itens&id=64102&busca={card}',
-            EStore.OTHER: 'https://www.mineralgames.com.br/?view=ecom/itens&id=9781&busca={card}'
+            EStore.OTHER: 'https://www.mineralgames.com.br/?view=ecom/itens&id=9781&busca={card}',
+            EStore.PLAYGROUND: 'https://www.playgroundgames.com.br/?view=ecom/itens&id=9781&busca={card}'
         }
 
         return store_urls[store].format(card=card_name)

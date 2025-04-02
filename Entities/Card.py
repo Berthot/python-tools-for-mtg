@@ -19,6 +19,12 @@ class Card:
     color_tag: Optional[str] = None
     scryfall: Scryfall = None
     has_scryfall: bool = scryfall is not None
+    color_code: Optional[str] = None
+    foil: Optional[str] = None
+    collector_number: Optional[str] = None
+
+    def has_scryfall(self):
+        return self.scryfall is not None
 
     @classmethod
     def from_name(cls, name: str):
@@ -39,18 +45,34 @@ class Card:
             color_tag=json.get('color_tag'),
         )
 
+    def to_deck_liga_line(self) -> str:
+        parts = [f"{self.quantity or 1} {self.get_primary_name()}"]
+
+        if self.collection:
+            parts.append(f"[{self.collection}]")
+
+        if self.deck_category:
+            if 'commander{top}' in self.category_normalized():
+                return ''
+
+        return ' '.join(parts)
+
+
+    def category_normalized(self) -> str:
+        if self.deck_category is not None:
+            data = ', '.join(self.deck_category) if isinstance(self.deck_category, list) else self.deck_category
+            return data.lower()
+        return ''
+
     def to_deck_archidekt_line(self) -> str:
         parts = [f"{self.quantity or 1}x {self.name}"]
 
         if self.collection:
             parts[-1] += f" ({self.collection})"
-
         if self.deck_category:
-            category_str = ', '.join(self.deck_category) if isinstance(self.deck_category, list) else self.deck_category
-            parts.append(f"[{category_str}]")
-
+            parts.append(f"[{self.category_normalized()}]")
         if self.color_tag:
-            parts.append(f"^{self.color_tag}^")
+            parts.append(f"^{self.color_tag},{self.color_code}^")
 
         return ' '.join(parts)
 
@@ -76,14 +98,14 @@ class Card:
 
         return name
 
-
-    def export_as_dict(self, full:bool = False):
+    def export_as_dict(self, full: bool = False):
         if full:
             return self._to_full_json()
 
         return self._to_simple_dict()
 
     def _to_simple_dict(self) -> dict:
+
         simple_dict = {
             "quantity": self.quantity or 1,
             "name": self.name.lower() if self.name else None,
@@ -93,15 +115,24 @@ class Card:
             "card_type": self.scryfall.type_line if self.scryfall else None,
             "card_description": self.scryfall.oracle_text if self.scryfall else None
         }
+        if self.color_tag is not None:
+            simple_dict['i_have'] = self.color_tag + ',' + self.color_code + '^'
+
+        if not self.has_scryfall:
+            return simple_dict
+
         is_two_faces = self.scryfall.layout in ['transform', 'split'] and hasattr(self.scryfall, 'card_faces')
 
         if self.has_scryfall is True and is_two_faces:
-            simple_dict["mana_cost"] = f"{self.scryfall.card_faces[0]["mana_cost"]} // {self.scryfall.card_faces[1]["mana_cost"]}"
-            simple_dict["card_type"] = f"{self.scryfall.card_faces[0]["type_line"]} // {self.scryfall.card_faces[1]["type_line"]}"
+            simple_dict[
+                "mana_cost"] = f"{self.scryfall.card_faces[0]["mana_cost"]} // {self.scryfall.card_faces[1]["mana_cost"]}"
+            simple_dict[
+                "card_type"] = f"{self.scryfall.card_faces[0]["type_line"]} // {self.scryfall.card_faces[1]["type_line"]}"
             simple_dict[f"card_description"] = {
-                f"{self.name.split(' // ')[0]}": f"{self.scryfall.card_faces[0]["oracle_text"]}",
-                f"{self.name.split(' // ')[1]}": f"{self.scryfall.card_faces[1]["oracle_text"]}",
+                f"{self.scryfall.name.split(' // ')[0]}": f"{self.scryfall.card_faces[0]["oracle_text"]}",
+                f"{self.scryfall.name.split(' // ')[1]}": f"{self.scryfall.card_faces[1]["oracle_text"]}",
             }
+
 
         return simple_dict
 

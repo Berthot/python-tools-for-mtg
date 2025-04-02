@@ -15,8 +15,8 @@ class Deck:
     scryfall_fetched: bool = False
     _export_base_path: str = 'Files'
 
-    def __init__(self, base_path: Optional[str] = None, file_name: Optional[str] = None, generic_name: bool = False):
-        self._generic_name = generic_name
+    def __init__(self, base_path: Optional[str] = None, file_name: Optional[str] = None, use_generic_name: bool = False):
+        self._use_generic_name = use_generic_name
         env_manager = EnvManager()
         env_default_export_base_path = env_manager.get_env(env_name='DEFAULT_EXPORT_BASE_PATH')
         env_default_export_file_name = env_manager.get_env(env_name='DEFAULT_EXPORT_FILE_NAME')
@@ -49,7 +49,8 @@ class Deck:
             self.not_found_cards = [card for card in self.cards if not card.has_scryfall]
         return self.not_found_cards
 
-    def export(self, export_format: EExportFormat = EExportFormat.JSON, full: bool = False, internal_export=False) -> str:
+    def export(self, export_format: EExportFormat = EExportFormat.JSON, full: bool = False,
+               internal_export=False) -> str:
         """
         Exporta o deck como JSON ou como texto (formato Archidekt-like).
 
@@ -73,11 +74,13 @@ class Deck:
             self._export_as_json(default_serializer, full, internal_export=internal_export)
         elif export_format == EExportFormat.ARCHIDEKT:
             self._export_as_archidekt(internal_export=internal_export)
+        elif export_format == EExportFormat.LIGA:
+            self._export_as_liga(internal_export=internal_export)
         else:
             raise ValueError("Formato de exportação inválido. Use 'json' ou 'archidekt'.")
 
     def file_name_or_default(self):
-        if self._generic_name:
+        if self._use_generic_name:
             return self._export_default_file_name
         return self._export_default_file_name if self.find_commander() is None else self.find_commander()
 
@@ -93,11 +96,24 @@ class Deck:
                     return card.normalize_filename()
         return None
 
+
+    def _export_as_liga(self, internal_export=False):
+        file_name = self.file_name_or_default()
+        path = f'{self._export_base_path}/LIGA_{file_name}.txt'
+        if internal_export:
+            path = f'Files/LIGA_{file_name}.txt'
+        print("\n📤 Exportando como Archidekt...")
+        cards_dict = [card.to_deck_liga_line() + '\n' for card in self.cards]
+        with open(path, 'w', encoding='utf-8') as txt_file:
+            for card in cards_dict:
+                txt_file.writelines(card)
+        print(f"📤 Exportado _> {path}")
+
     def _export_as_archidekt(self, internal_export=False):
         file_name = self.file_name_or_default()
-        path = f'{self._export_base_path}/{file_name}.txt'
+        path = f'{self._export_base_path}/ARCHIDEKT_{file_name}.txt'
         if internal_export:
-            path = f'Files/{file_name}.txt'
+            path = f'Files/ARCHIDEKT_{file_name}.txt'
         print("\n📤 Exportando como Archidekt...")
         cards_dict = [card.to_deck_archidekt_line() + '\n' for card in self.cards]
         with open(path, 'w', encoding='utf-8') as txt_file:
@@ -117,70 +133,14 @@ class Deck:
         print(f"📤 Exportado _> {path}")
 
     @staticmethod
-    def parse_card_line(line: str) -> 'Card':
-        line = line.strip()
-
-        # Extrai quantidade
-        quantity_match = re.match(r'^(\d+)x?\s+', line)
-        if not quantity_match:
-            raise ValueError(f"Invalid quantity in line: {line}")
-
-        quantity = int(quantity_match.group(1))
-        remaining = line[quantity_match.end():]
-
-        # Extrai tag de cor (se existir)
-        color_tag = None
-        if '^' in remaining:
-            remaining, color_part = remaining.rsplit('^', 1)
-            color_tag_match = re.search(r'\^([^^]+)\^$', remaining + '^' + color_part)
-            if color_tag_match:
-                color_tag = color_tag_match.group(1)
-                remaining = remaining.replace(f'^{color_tag}^', '')
-
-        # Extrai categoria (se existir)
-        deck_category = None
-        if '[' in remaining:
-            remaining, category_part = remaining.rsplit('[', 1)
-            category_match = re.search(r'\[([^]]+)]$', '[' + category_part)
-            if category_match:
-                # Split por vírgula e remover espaços em branco
-                categories = [cat.strip() for cat in category_match.group(1).split(',')]
-                deck_category = categories if len(categories) > 1 else category_match.group(1)
-
-        # Extrai coleção e número do coletor (se existirem)
-        collection = None
-        collector_number = None
-        if '(' in remaining:
-            collection_match = re.search(r'\(([^)]+)\)', remaining)
-            if collection_match:
-                collection_info = collection_match.group(1).split()
-                collection = collection_info[0]
-                if len(collection_info) > 1:
-                    collector_number = collection_info[1]
-                remaining = remaining.replace(f'({collection_match.group(1)})', '')
-
-        # O que sobrou é o nome da carta
-        name = remaining.strip()
-        if "elves" in name:
-            pass
-        if "Elves" in name:
-            pass
-
-        return Card(
-            name=name,
-            collection=collection,
-            quantity=quantity,
-            deck_category=deck_category,
-            color_tag=color_tag
-        )
-
-    @staticmethod
     def get_primary_name(card_name: str) -> str:
         if "//" not in card_name:
             return card_name
         return card_name.split('//')[0].strip()
 
-    def print(self):
+    def print(self, show: bool = False):
+        if not show:
+            return
         if not self.scryfall_fetched:
             print("Deck List:")
             for card in self.cards:
@@ -198,3 +158,77 @@ class Deck:
             print("\nNOT_FOUND:")
             for card in not_found_cards:
                 print(card)
+
+    def parse_card_line(self, line: str) -> Card:
+        line = line.strip()
+
+        # Extrai quantidade
+        quantity_match = re.match(r'^(\d+)x?\s+', line)
+        if not quantity_match:
+            raise ValueError(f"Formato de quantidade inválido: {line}")
+
+        quantity = int(quantity_match.group(1))
+        remaining = line[quantity_match.end():]
+
+        # Dicionário para armazenar componentes extraídos
+        components = {
+            'color_tag': None,
+            'color_code': None,
+            'deck_category': None,
+            'foil': False,
+            'collection': None,
+            'collector_number': None
+        }
+
+        # Ordem de processamento dos componentes (ajustar conforme necessidade)
+        processing_order = [
+            ('color', r'\^([^^]+)\^', self._process_color),
+            ('category', r'\[([^]]+)\]', self._process_category),
+            ('foil', r'\*([^*]+)\*', self._process_foil),
+            ('collection', r'\(([^)]+)\)', self._process_collection)
+        ]
+
+        # Processa cada componente na ordem definida
+        for comp_name, pattern, processor in processing_order:
+            match = re.search(pattern, remaining)
+            if match:
+                processor(match, components, remaining)
+                remaining = re.sub(pattern, '', remaining, count=1).strip()
+
+        # Restante é o nome da carta
+        name = remaining.strip().split('  ')[0].strip()
+
+        card = Card.from_name(name.lower())
+        card.quantity = quantity
+        card.deck_category = components.get('deck_category')
+        card.color_tag = components.get('color_tag')
+        card.color_code = components.get('color_code')
+        card.foil = components.get('foil')
+        card.collection = components.get('collection')
+        card.collector_number = components.get('collector_number')
+        return card
+
+    # Funções auxiliares para processamento
+    @staticmethod
+    def _process_color(match, components, remaining):
+        color_info = match.group(1).split(',')
+        components['color_tag'] = color_info[0]
+        if len(color_info) > 1:
+            components['color_code'] = color_info[1]
+
+    @staticmethod
+    def _process_category(match, components, remaining):
+        categories = [cat.strip() for cat in match.group(1).split(',')]
+        components['deck_category'] = categories if len(categories) > 1 else match.group(1)
+
+    @staticmethod
+    def _process_foil(match, components, remaining):
+        components['foil'] = match.group(1).lower() == 'f'
+
+    @staticmethod
+    def _process_collection(match, components, remaining):
+        collection_info = match.group(1).split()
+        components['collection'] = collection_info[0]
+        if len(collection_info) > 1:
+            components['collector_number'] = ' '.join(collection_info[1:])
+

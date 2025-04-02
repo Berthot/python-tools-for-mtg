@@ -68,7 +68,7 @@ class ScryfallRepository:
 
     def get_card_by_name(self, card_name: str) -> Optional[Scryfall]:
         """Retorna uma carta pelo nome (self.cards)."""
-        return next((card for card in self.cards if card.name == card_name), None)
+        return next((card for card in self.cards if card.get_primary_name() == card_name), None)
 
     def get_cards(self) -> List[Scryfall]:
         """Retorna cartas como se fosse feito um 'where' na lista de cartas (self.cards)."""
