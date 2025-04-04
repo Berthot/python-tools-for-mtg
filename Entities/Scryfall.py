@@ -80,7 +80,7 @@ class Scryfall:
     def from_name(cls, name: str):
         """ Preenche apenas o campo nome. """
         scryfall = cls()
-        scryfall.name = name.lower()
+        scryfall.name = name
         return scryfall
 
     @classmethod

@@ -28,8 +28,8 @@ if __name__ == "__main__":
 
     # 💾 Exporta o deck como JSON simplificado
 
-    # first_deck.export(export_format=EExportFormat.JSON, full=False, internal_export=False)
-    # first_deck.export(export_format=EExportFormat.ARCHIDEKT, full=False, internal_export=False)
+    first_deck.export(export_format=EExportFormat.JSON, full=False, internal_export=False)
+    first_deck.export(export_format=EExportFormat.ARCHIDEKT, full=False, internal_export=False)
 
     # first_deck.export(export_format=EExportFormat.LIGA, full=False, internal_export=False)
 
@@ -39,10 +39,11 @@ if __name__ == "__main__":
     # 🌐 (Opcional) Abre abas do navegador com as cartas numa loja
     # liga_service.buy_cards(deck=first_deck, store=EStore.LIGA, open_browser=True)
 
-    buy_list_deck = Deck(file_name='buy_list', use_generic_name=True)
-    buy_list_deck.print()
+    if False:
+        buy_list_deck = Deck(file_name='buy_list', use_generic_name=True)
+        buy_list_deck.print()
 
-    deck_service.fetch_scryfall_data(buy_list_deck)
-    buy_list_deck.export(export_format=EExportFormat.JSON, full=False, internal_export=True)
+        deck_service.fetch_scryfall_data(buy_list_deck)
+        buy_list_deck.export(export_format=EExportFormat.JSON, full=False, internal_export=True)
 
     # liga_service.buy_cards(deck=buy_list_deck, store=EStore.PLAYGROUND, open_browser=True)

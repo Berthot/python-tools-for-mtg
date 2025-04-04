@@ -2,7 +2,7 @@ import json
 import re
 import uuid
 from dataclasses import field, dataclass, asdict
-from typing import Optional, Dict
+from typing import Optional, Dict, List
 
 import unicodedata
 
@@ -15,7 +15,7 @@ class Card:
     name: str = None
     collection: Optional[str] = None
     quantity: Optional[int] = None
-    deck_category: Optional[str] = ""
+    deck_category: Optional[List[str]] = None
     color_tag: Optional[str] = None
     scryfall: Scryfall = None
     has_scryfall: bool = scryfall is not None
@@ -29,7 +29,7 @@ class Card:
     @classmethod
     def from_name(cls, name: str):
         return Card(
-            name=name.strip().lower(),
+            name=name.strip(),
             collection=None,
             quantity=1,
             color_tag=None
@@ -41,7 +41,7 @@ class Card:
             name=json['name'].strip().lower(),
             collection=json.get('collection'),
             quantity=int(json['quantity']) if json.get('quantity') else None,
-            deck_category=json.get('category') if isinstance(json.get('category'), list) else json.get('category'),
+            deck_category=json.get('category') if isinstance(json.get('category'), list) else [json.get('category')],
             color_tag=json.get('color_tag'),
         )
 
@@ -61,16 +61,17 @@ class Card:
     def category_normalized(self) -> str:
         if self.deck_category is not None:
             data = ', '.join(self.deck_category) if isinstance(self.deck_category, list) else self.deck_category
-            return data.lower()
+            return data
         return ''
 
     def to_deck_archidekt_line(self) -> str:
         parts = [f"{self.quantity or 1}x {self.name}"]
 
         if self.collection:
-            parts[-1] += f" ({self.collection})"
+            parts.append(f"({self.collection})")
+            parts.append(f"{self.collector_number}")
         if self.deck_category:
-            parts.append(f"[{self.category_normalized()}]")
+            parts.append(f"[{self.category_normalized().split(',')[0]}]")
         if self.color_tag:
             parts.append(f"^{self.color_tag},{self.color_code}^")
 
@@ -108,7 +109,7 @@ class Card:
 
         simple_dict = {
             "quantity": self.quantity or 1,
-            "name": self.name.lower() if self.name else None,
+            "name": self.scryfall.name if self.scryfall.name else self.name,
             "deck_category": self.deck_category if self.deck_category else None,
             "mana_cost": self.scryfall.mana_cost if self.scryfall else None,
             "cmc": self.scryfall.cmc if self.scryfall else None,
@@ -116,12 +117,12 @@ class Card:
             "card_description": self.scryfall.oracle_text if self.scryfall else None
         }
         if self.color_tag is not None:
-            simple_dict['i_have'] = self.color_tag + ',' + self.color_code + '^'
+            simple_dict['i_have'] = self.color_tag
 
         if not self.has_scryfall:
             return simple_dict
 
-        is_two_faces = self.scryfall.layout in ['transform', 'split'] and hasattr(self.scryfall, 'card_faces')
+        is_two_faces = self.scryfall.layout in ['transform', 'split', 'modal_dfc'] and hasattr(self.scryfall, 'card_faces')
 
         if self.has_scryfall is True and is_two_faces:
             simple_dict[

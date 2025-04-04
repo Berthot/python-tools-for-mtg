@@ -183,8 +183,9 @@ class Deck:
         # Ordem de processamento dos componentes (ajustar conforme necessidade)
         processing_order = [
             ('color', r'\^([^^]+)\^', self._process_color),
-            ('category', r'\[([^]]+)\]', self._process_category),
             ('foil', r'\*([^*]+)\*', self._process_foil),
+            ('collector_number', r'\)\s*([^[\]]+?)\s*\[', self._process_collector_number),
+            ('category', r'\[([^]]+)\]', self._process_category),
             ('collection', r'\(([^)]+)\)', self._process_collection)
         ]
 
@@ -193,7 +194,8 @@ class Deck:
             match = re.search(pattern, remaining)
             if match:
                 processor(match, components, remaining)
-                remaining = re.sub(pattern, '', remaining, count=1).strip()
+                if comp_name != 'collector_number':
+                    remaining = re.sub(pattern, '', remaining, count=1).strip()
 
         # Restante é o nome da carta
         name = remaining.strip().split('  ')[0].strip()
@@ -229,6 +231,10 @@ class Deck:
     def _process_collection(match, components, remaining):
         collection_info = match.group(1).split()
         components['collection'] = collection_info[0]
-        if len(collection_info) > 1:
-            components['collector_number'] = ' '.join(collection_info[1:])
+        # if len(collection_info) > 1:
+        #     components['collector_number'] = ' '.join(collection_info[1:])
+
+    @staticmethod
+    def _process_collector_number(match, components, remaining):
+        components['collector_number'] = match.group(1)
 

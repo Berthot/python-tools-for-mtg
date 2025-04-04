@@ -1,84 +1,91 @@
-1x Anguished Unmaking (2x2) 170 [Removal] ^Don't Have,#f47373^
-1x Arcane Signet (tdc) 105 [Ramp] ^Have,#37d67a^
-1x Ashnod's Altar (cmm) 368 [Sacrifice Outlets] ^Have,#37d67a^
-1x Athreos, God of Passage (plst) JOU-146 [Recursion] ^Don't Have,#f47373^
-1x Ballroom (clu) 12 [Land] ^Have,#37d67a^
-1x Bartolomé del Presidio (lci) 301 [Sacrifice Outlets] ^Have,#37d67a^
-1x Bastion of Remembrance (tdc) 171 [Payoffs/Anthems] ^Have,#37d67a^
-1x Black Market Connections (acr) 87 [Card Draw] ^Have,#37d67a^
-1x Blade of the Bloodchief (lcc) 300 [Payoffs/Anthems] ^Have,#37d67a^
-1x Blood Artist (inr) 97 [Payoffs/Anthems] ^Have,#37d67a^
-1x Bloodghast (dft) 337 [Recursion] ^Don't Have,#f47373^
-1x Bloodthrone Vampire (plst) ROE-98 [Sacrifice Outlets] ^Have,#37d67a^
-1x Butcher of Malakir (lcc) 187 [Payoffs/Anthems] ^Have,#37d67a^
-1x Captivating Vampire (inr) 484 *F* [Vampires (Tribal)] ^Have,#37d67a^
-1x Champion of Dusk (lcc) 188 [Card Draw] ^Have,#37d67a^
-1x Coat of Arms (plst) DDS-58 [Payoffs/Anthems] ^Have,#37d67a^
-1x Command Tower (tdc) 107 [Land] ^Have,#37d67a^
-1x Cordial Vampire (lcc) 189 [Payoffs/Anthems] ^Don't Have,#f47373^
-1x Corpse Knight (drc) 50 [Payoffs/Anthems] ^Have,#37d67a^
-1x Cover of Darkness (acr) 89 [Payoffs/Anthems] ^Have,#37d67a^
-1x Cruel Celebrant (lcc) 267 [Payoffs/Anthems] ^Have,#37d67a^
-1x Culling the Weak (mb2) 40 [Ramp] ^Have,#37d67a^
-1x Dawn's Truce (blb) 9 [Protection] ^Have,#37d67a^
-1x Deadly Dispute (tdc) 177 [Card Draw] ^Don't Have,#f47373^
-1x Diabolic Intent (bro) 89 [Utility] ^Proxy,#effa0d^
-1x Dictate of Erebos (plst) JOU-65 [Payoffs/Anthems] ^Have,#37d67a^
-1x Drana, Liberator of Malakir (lcc) 193 [Payoffs/Anthems] ^Have,#37d67a^
-1x Dusk // Dawn (drc) 65 [Recursion] ^Don't Have,#f47373^
-1x Edgar, Charmed Groom // Edgar Markov's Coffin (vow) 236 [Token Generation] ^Have,#37d67a^
-1x Eldrazi Monument (plst) CMA-216 [Payoffs/Anthems] ^Don't Have,#f47373^
-1x Elenda, the Dusk Rose (lcc) 268 [Commander{top}] ^Have,#37d67a^
-1x Evolving Wilds (tdm) 255 [Land] ^Have,#37d67a^
-1x Fetid Heath (tdc) 362 [Land] ^Have,#37d67a^
-1x Forbidden Orchard (2x2) 405 [Land] ^Have,#37d67a^
-1x Forerunner of the Legion (rix) 9 [Utility] ^Have,#37d67a^
-1x Gift of Immortality (ths) 14 [Protection] ^Have,#37d67a^
-1x Heliod's Intervention (otc) 81 [Removal] ^Don't Have,#f47373^
-1x Herald's Horn (lcc) 304 [Vampires (Tribal)] ^Have,#37d67a^
-1x High Market (afc) 246 [Land] ^Have,#37d67a^
-1x Kalitas, Traitor of Ghet (plst) OGW-86 [Removal] ^Don't Have,#f47373^
-1x Land Tax (brb) 35 [Ramp] ^Have,#37d67a^
-1x Mavren Fein, Dusk Apostle (lcc) 133 [Token Generation] ^Have,#37d67a^
-1x Mirror Entity (otc) 83 [Payoffs/Anthems] ^Don't Have,#f47373^
-1x Mortuary Mire (pip) 272 [Land] ^Have,#37d67a^
-1x Myriad Landscape (tdc) 380 [Land] ^Have,#37d67a^
-1x Night's Whisper (j25) 471 [Card Draw] ^Have,#37d67a^
-1x Opal Palace (cmm) 422 [Land] ^Have,#37d67a^
-1x Ophiomancer (tdc) 193 [Token Generation] ^Have,#37d67a^
-1x Orzhov Signet (drc) 134 [Ramp] ^Have,#37d67a^
-1x Path to Exile (mb2) 15 [Removal] ^Have,#37d67a^
-1x Pawn of Ulamog (plst) ROE-122 [Token Generation] ^Don't Have,#f47373^
-1x Phyrexian Reclamation (tdc) 194 [Recursion] ^Have,#37d67a^
-1x Phyrexian Tower (mh3) 303 [Land] ^Have,#37d67a^
-1x Pitiless Plunderer (j25) 476 [Ramp] ^Proxy,#effa0d^
-9x Plains (tdm) 278 [Land] ^Have,#37d67a^
-1x Reanimate (dsc) 155 [Recursion] ^Proxy,#effa0d^
-1x Relic of Legends (dmu) 236 [Ramp] ^Have,#37d67a^
-1x Rogue's Passage (otc) 313 [Land] ^Have,#37d67a^
-1x Sanctum Seeker (j25) 485 [Vampires (Tribal)] ^Have,#37d67a^
-1x Secluded Courtyard (neo) 512 *F* [Land] ^Have,#37d67a^
-1x Shadowy Backstreet (mkm) 268 *F* [Land] ^Have,#37d67a^
-1x Silversmote Ghoul (c21) 154 [Recursion] ^Have,#37d67a^
-1x Skullclamp (tdc) 103 [Card Draw] ^Have,#37d67a^
-1x Slash the Ranks (cmr) 47 [Removal] ^Have,#37d67a^
-1x Smothering Tithe (cmm) 57 [Ramp] ^Have,#37d67a^
-1x Sol Ring (tdc) 106 [Ramp] ^Have,#37d67a^
-1x Spymaster's Vault (mh3) 230 [Land] ^Have,#37d67a^
-9x Swamp (tdm) 282 [Land] ^Have,#37d67a^
-1x Swiftfoot Boots (fdn) 258 [Protection] ^Don't Have,#f47373^
-1x Swords to Plowshares (tdc) 134 [Removal] ^Have,#37d67a^
-1x Tainted Field (dsc) 302 [Land] ^Have,#37d67a^
-1x Temple of Silence (tdc) 406 [Land] ^Have,#37d67a^
-1x Terramorphic Expanse (tdc) 408 [Land] ^Have,#37d67a^
-1x Teysa Karlov (cmm) 359 [Payoffs/Anthems] ^Have,#37d67a^
-1x The Ozolith (iko) 237 [Utility] ^Have,#37d67a^
-1x Twilight Prophet (mkc) 143 [Card Draw] ^Have,#37d67a^
-1x Undying Malice (vow) 134 [Protection] ^Have,#37d67a^
-1x Vampiric Rites (j22) 484 [Card Draw] ^Have,#37d67a^
-1x Vanquish the Horde (inr) 302 [Removal] ^Have,#37d67a^
-1x Victimize (tdc) 198 [Recursion] ^Have,#37d67a^
-1x Viscera Seer (tdc) 199 [Sacrifice Outlets] ^Have,#37d67a^
-1x Vona, Butcher of Magan (lcc) 293 [Removal] ^Have,#37d67a^
-1x Welcoming Vampire (mkc) 91 [Card Draw] ^Have,#37d67a^
-1x Yahenni, Undying Partisan (tdc) 202 [Sacrifice Outlets] ^Have,#37d67a^
+1x Hullbreaker Horror (inr) 303 [Removal] ^Verifyed,#0658fd^
+1x Aether Channeler (dmu) 42 [Draw,Creature] ^Verifyed,#0658fd^
+1x Accursed Duneyard (drc) 20 [Land] ^Don't Have,#f47373^
+1x Agent of Treachery (m20) 43 [Bombs,Creature] ^Don't Have,#f47373^
+1x Alter Reality (tor) 22 [Copy] ^Don't Have,#f47373^
+1x Amphibian Downpour (mh3) 51 [Removal] ^Don't Have,#f47373^
+1x An Offer You Can't Refuse (slp) 7 [Counters,Instant] ^Verifyed,#0658fd^
+1x Aquitect's Will (ddt) 2 [Engine - Target Land] ^Don't Have,#f47373^
+1x Arcane Denial (voc) 102 [Counters,Instant] ^Verifyed,#0658fd^
+1x Archaeomancer (plst) C17-81 [Recursion,Creature] ^Verifyed,#0658fd^
+1x Archmage Emeritus (stx) 37 [Draw,Creature] ^Have,#37d67a^
+1x Archmage of Runes (fdn) 30 [Draw] ^Don't Have,#f47373^
+1x Argent Mutation (nph) 27 [Engine - Any Permanent] ^Don't Have,#f47373^
+1x Artful Dodge (dka) 27 [Engine - Target Creatures] ^Don't Have,#f47373^
+1x Azami, Lady of Scrolls (cmm) 74 [Draw] ^Don't Have,#f47373^
+1x Back to Basics (uma) 46 [Stax] ^Don't Have,#f47373^
+1x Blue Sun's Zenith (sta) 12 [Draw] ^Have,#37d67a^
+1x Case of the Ransacked Lab (mkm) 45 [Ramp] ^Verifyed,#0658fd^
+1x Cerulean Wisps (plst) SHM-31 [Engine - Target Creatures] ^Don't Have,#f47373^
+1x Clockspinning (tsp) 53 [Engine - Any Permanent,Instant] ^Don't Have,#f47373^
+1x Cloudpost (mrd) 280 [Land] ^Don't Have,#f47373^
+1x Commander's Sphere (cmm) 377 [Ramp,Artifact] ^Verifyed,#0658fd^
+1x Convolute (emn) 53 [Counters] ^Have,#37d67a^
+1x Counterspell (dsc) 114 [Counters] ^Verifyed,#0658fd^
+1x Cryptic Caves (khc) 109 [Land] ^Don't Have,#f47373^
+1x Dive Down (xln) 53 [Protection] ^Don't Have,#f47373^
+1x Dizzy Spell (rav) 43 [Engine - Target Creatures,Instant] ^Don't Have,#f47373^
+1x Dream's Grip (mrd) 34 [Engine - Any Permanent,Instant] ^Don't Have,#f47373^
+1x Energy Tap (4ed) 69 [Engine - Target Creatures] ^Don't Have,#f47373^
+1x Enervate (5ed) 84 [Engine - Any Permanent] ^Don't Have,#f47373^
+1x Essence Flux (jmp) 151 [Blink,Instant] ^Don't Have,#f47373^
+1x Fleeting Distraction (j22) 299 [Engine - Target Creatures,Instant] ^Don't Have,#f47373^
+1x Flusterstorm (mh1) 255 [Counters] ^Verifyed,#0658fd^
+1x Ghostly Flicker (cmm) 98 [Blink,Instant] ^Don't Have,#f47373^
+1x Gigadrowse (gpt) 26 [Engine - Any Permanent,Instant] ^Don't Have,#f47373^
+1x Gilded Lotus (cmm) 387 [Ramp,Artifact] ^Have,#37d67a^
+1x Hidden Strings (dgm) 12 [Engine - Any Permanent] ^Don't Have,#f47373^
+1x High Tide (dmr) 54 [Ramp] ^Verifyed,#0658fd^
+1x Idol of Oblivion (tdc) 319 [Draw] ^Don't Have,#f47373^
+1x Imprisoned in the Moon (inr) 69 [Removal] ^Don't Have,#f47373^
+1x Infuse (ice) 80 [Engine - Any Permanent] ^Don't Have,#f47373^
+28x Island (woe) 263 [Land] ^Verifyed,#0658fd^
+1x Jinx (hml) 29 [Ramp] ^Don't Have,#f47373^
+1x Leap (sth) 35 [Engine - Target Creatures,Instant] ^Don't Have,#f47373^
+1x Lightning Greaves (cmm) 398 [Protection,Artifact] ^Have,#37d67a^
+1x Loyal Inventor (acr) 21 [Tutor] ^Don't Have,#f47373^
+1x March of Swirling Mist (neo) 61 [Protection] ^Don't Have,#f47373^
+1x Master of Waves (plst) DDT-1 [Tokens,Creature] ^Don't Have,#f47373^
+1x Merchant Scroll (hml) 33 [Tutor] ^Verifyed,#0658fd^
+1x Micromancer (dmu) 57 [Tutor] ^Don't Have,#f47373^
+1x Mind Games (sth) 38 [Engine - Any Permanent] ^Don't Have,#f47373^
+1x Mind Stone (cmm) 961 [Ramp,Artifact] ^Verifyed,#0658fd^
+1x Mirage Mirror (cmm) 962 [Copy] ^Don't Have,#f47373^
+1x Muddle the Mixture (rvr) 50 [Counters] ^Don't Have,#f47373^
+1x Mulldrifter (2x2) 60 [Draw,Creature] ^Verifyed,#0658fd^
+1x Mystic Sanctuary (eld) 247 [Land,Recursion] ^Verifyed,#0658fd^
+1x Naban, Dean of Iteration (dom) 58 [Copy] ^Don't Have,#f47373^
+1x Orvar, the All-Form (sld) 1683 *F* [Commander{top}] ^Don't Have,#f47373^
+1x Peregrine Drake (dmr) 65 [Ramp] ^Verifyed,#0658fd^
+1x Phyrexian Metamorph (2xm) 61 [Copy,Creature] ^Don't Have,#f47373^
+1x Pongify (plst) PLC-44 [Removal,Instant] ^Verifyed,#0658fd^
+1x Precursor Golem (plst) MM2-225 [Tokens] ^Verifyed,#0658fd^
+1x Propaganda (acr) 85 [Protection] ^Verifyed,#0658fd^
+1x Reliquary Tower (cmm) 425 [Land] ^Have,#37d67a^
+1x Riptide Laboratory (mh2) 303 *F* [Land] ^Verifyed,#0658fd^
+1x Salvager of Secrets (m19) 70 [Recursion] ^Don't Have,#f47373^
+1x Scholar of the Ages (cmr) 93 [Recursion] ^Verifyed,#0658fd^
+1x Shadow Rift (tmp) 86 [Engine - Target Creatures,Instant] ^Don't Have,#f47373^
+1x Shimmering Mirage (apc) 30 [Engine - Target Land] ^Don't Have,#f47373^
+1x Shipwreck Dowser (cmm) 119 [Recursion,Creature] ^Don't Have,#f47373^
+1x Slip Out the Back (clu) 99 [Protection] ^Don't Have,#f47373^
+1x Slip Through Space (plst) OGW-47 [Engine - Target Creatures] ^Don't Have,#f47373^
+1x Snap (dmr) 66 [Removal,Instant] ^Verifyed,#0658fd^
+1x Sol Ring (cmm) 410 [Ramp,Artifact] ^Verifyed,#0658fd^
+1x Solemn Simulacrum (cmm) 973 [Ramp] ^Verifyed,#0658fd^
+1x Spark Double (rvr) 62 [Copy] ^Don't Have,#f47373^
+1x Sunscorched Desert (akh) 249 [Land] ^Don't Have,#f47373^
+1x Teferi's Time Twist (war) 72 [Blink,Instant] ^Don't Have,#f47373^
+1x The Reality Chip (neo) 74 [Draw] ^Verifyed,#0658fd^
+1x Thermal Flux (csp) 49 [Engine - Any Permanent,Instant] ^Don't Have,#f47373^
+1x Thought Vessel (cmm) 414 [Ramp,Artifact] ^Have,#37d67a^
+1x Trait Doctoring (dgm) 18 [Engine - Any Permanent] ^Don't Have,#f47373^
+1x Twiddle (8ed) 111 [Engine - Any Permanent,Instant] ^Don't Have,#f47373^
+1x Twisted Image (a25) 75 [Engine - Target Creatures,Instant] ^Don't Have,#f47373^
+1x Twitch (wwk) 43 [Engine - Any Permanent] ^Don't Have,#f47373^
+1x Venser, Shaper Savant (2x2) 66 [Removal,Creature] ^Don't Have,#f47373^
+1x Vesuvan Duplimancy (dmu) 73 [Bombs] ^Don't Have,#f47373^
+1x Voracious Bibliophile (tdc) 23 [Draw] ^Don't Have,#f47373^
+1x Walk the Aeons (tsr) 98 [Bombs] ^Don't Have,#f47373^
+1x Wavebreak Hippocamp (j22) 371 [Draw,Creature] ^Verifyed,#0658fd^
+1x Whim of Volrath (tmp) 102 [Engine - Any Permanent] ^Don't Have,#f47373^
